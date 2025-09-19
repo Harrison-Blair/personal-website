@@ -7,7 +7,6 @@ assignees: Harrison-Blair
 
 ---
 
-# Description
 *Describe what needs to be done*
 
 # Justification

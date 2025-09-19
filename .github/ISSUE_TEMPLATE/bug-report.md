@@ -7,7 +7,6 @@ assignees: Harrison-Blair
 
 ---
 
-# Description
 *Describe what erroneous functionality is taking place*
 
 # Reproduction Steps

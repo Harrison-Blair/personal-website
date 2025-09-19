@@ -7,7 +7,6 @@ assignees: Harrison-Blair
 
 ---
 
-# Description
 *Describe* ***what*** *is being added or changed...* 
 
 # Functional Requirements
