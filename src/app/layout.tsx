@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navigation from "./components/layout/Navigation/Navigation";
 
 const protoNF = localFont({
   src: "./fonts/0xProtoNerdFont-Regular.woff",
@@ -24,7 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${protoNF.variable} ${protoMonoNF.variable} antialiased`}>
-        <main>{children}</main>
+        <Navigation />
+        <main className="flex-1 ml-20 p-8">
+          {children}
+        </main>
       </body>
     </html>
   );
