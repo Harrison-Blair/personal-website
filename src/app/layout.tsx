@@ -5,12 +5,10 @@ import "./globals.css";
 const protoNF = localFont({
   src: "./fonts/0xProtoNerdFont-Regular.woff",
   variable: "--font-proto",
-  weight: "100 900",
 });
 const protoMonoNF = localFont({
   src: "./fonts/0xProtoNerdFontMono-Regular.woff",
   variable: "--font-proto-mono",
-  weight: "100 900",
 });
 
 export const metadata: Metadata = {
