@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <div>
+    <div className="font-mono">
       {/* Test Boxes for Colors */}
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '20px' }}>
         <div style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>

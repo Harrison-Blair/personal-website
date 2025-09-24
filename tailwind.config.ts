@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['var(--font-proto)', 'ui-sans-serif', 'system-ui'],
+        mono: ['var(--font-proto-mono)', 'ui-monospace', 'SFMono-Regular'],
+      },
     },
   },
   plugins: [],
