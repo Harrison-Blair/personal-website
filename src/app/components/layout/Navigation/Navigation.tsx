@@ -8,9 +8,15 @@ import { useState, useEffect } from 'react';
 export default function Navigation() {
     const ICON_SIZE = 60;
     const pathname = usePathname();
-    const [isDark, setIsDark] = useState(true);
+    const [isDark, setIsDark] = useState(false);
 
     useEffect(() => {
+        // Detect user's preferred color scheme or current DOM state
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const hasDarkClass = document.documentElement.classList.contains('dark');
+        const shouldBeDark = hasDarkClass || prefersDark;
+        setIsDark(shouldBeDark);
+        document.documentElement.classList.toggle('dark', shouldBeDark);
         document.documentElement.classList.add('dark');
     }, []);
 
