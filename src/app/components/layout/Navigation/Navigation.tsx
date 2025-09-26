@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 
 export default function Navigation() {
+    const ICON_SIZE = 60;
     const pathname = usePathname();
     const [isDark, setIsDark] = useState(true);
 
@@ -46,7 +47,7 @@ export default function Navigation() {
                                     : 'text-[var(--secondary)] hover:text-[var(--accent)]'
                             }`}
                         >
-                            <Icon size={60} />
+                            <Icon size={ICON_SIZE} />
                         </Link>
                     </li>
                 ))}
@@ -59,7 +60,7 @@ export default function Navigation() {
                             title={label}
                             className="block p-1 rounded transition-colors text-[var(--secondary)] hover:text-[var(--accent)]"
                         >
-                            <Icon size={60} />
+                            <Icon size={ICON_SIZE} />
                         </button>
                     </li>
                 ))}
