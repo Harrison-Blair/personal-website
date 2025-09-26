@@ -2,12 +2,11 @@
 
 import { Home, FileUser, FolderCode, FolderKanban, Briefcase, Mail, Sun, MoonStar } from 'lucide-react';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 
 export default function Navigation() {
     const pathname = usePathname();
-    const router = useRouter();
     const [isDark, setIsDark] = useState(true);
 
     useEffect(() => {
@@ -26,11 +25,11 @@ export default function Navigation() {
         { href: '/projects', icon: FolderCode, label: 'Projects' },
         { href: '/blog', icon: FolderKanban, label: 'Blog' },
         { href: '/work', icon: Briefcase, label: 'Work' },
+        { href: '/contact', icon: Mail, label: 'Contact' }
     ];
 
     const bottomNavItems = [
         { icon: isDark ? MoonStar : Sun, label: isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode', onClick: toggleTheme },
-        { icon: Mail, label: 'Contact', onClick: () => router.push('/contact') },
     ];
 
     return (
