@@ -2,38 +2,15 @@
 
 export default function Home() {
   return (
-    <div className="font-mono">
-      {/* Test Boxes for Colors */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '20px' }}>
-        <div style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Background</strong><br />
-          var(--background)
-        </div>
-        
-        <div style={{ backgroundColor: 'var(--foreground)', color: 'var(--background)', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Foreground</strong><br />
-          var(--foreground)
-        </div>
-        
-        <div style={{ backgroundColor: 'var(--muted)', color: 'var(--foreground)', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Muted</strong><br />
-          var(--muted)
-        </div>
-        
-        <div style={{ backgroundColor: 'var(--primary)', color: 'white', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Primary</strong><br />
-          var(--primary)
-        </div>
-        
-        <div style={{ backgroundColor: 'var(--secondary)', color: 'var(--foreground)', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Secondary</strong><br />
-          var(--secondary)
-        </div>
-        
-        <div style={{ backgroundColor: 'var(--accent)', color: 'white', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Accent</strong><br />
-          var(--accent)
-        </div>
+    <div className="max-w-4xl mx-auto">
+      <h1 className="text-4xl font-bold mb-8">Welcome to My Personal Website</h1>
+      <div className="space-y-6">
+        <p className="text-lg">
+          Hello! I'm glad you're here. This is my personal website where I share my projects, blog posts, and more about myself.
+        </p>
+        <p>
+          Feel free to explore the different sections using the navigation menu on the left.
+        </p>
       </div>
     </div>
   );
