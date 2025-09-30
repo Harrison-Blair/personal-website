@@ -47,7 +47,7 @@ export default function Navigation() {
                         <Link
                             href={href}
                             title={label}
-                            className={`block p-1 rounded transition-colors relative ${
+                            className={`flex items-center justify-center w-16 h-16 rounded transition-colors relative ${
                                 pathname === href
                                     ? 'text-[var(--foreground)] border-l-4 border-[var(--primary)]'
                                     : 'text-[var(--secondary)] hover:text-[var(--accent)]'
@@ -64,7 +64,7 @@ export default function Navigation() {
                         <button
                             onClick={onClick}
                             title={label}
-                            className="block p-1 rounded transition-colors text-[var(--secondary)] hover:text-[var(--accent)]"
+                            className="flex items-center justify-center w-16 h-16 rounded transition-colors text-[var(--secondary)] hover:text-[var(--accent)]"
                         >
                             <Icon size={ICON_SIZE} />
                         </button>
