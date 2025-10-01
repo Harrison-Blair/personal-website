@@ -17,21 +17,21 @@ export default function CircularButton({
   bgColor,
   hoverColor,
   isExternal = false,
-  size = 'w-12 h-12',
+  size = 'w-16 h-16',
 }: CircularButtonProps) {
   const buttonClasses = `${size} ${bgColor} ${hoverColor} rounded-full flex items-center justify-center text-white transition-colors duration-200`;
 
   if (isExternal) {
     return (
       <a href={href} target="_blank" rel="noopener noreferrer" className={buttonClasses}>
-        <Icon size={24} />
+        <Icon size={32} />
       </a>
     );
   }
 
   return (
     <Link href={href} className={buttonClasses}>
-      <Icon size={24} />
+      <Icon size={32} />
     </Link>
   );
 }
