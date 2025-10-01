@@ -4,12 +4,12 @@ import { Github, Linkedin, Mail, ChevronsDown } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <div className="row-span-2 flex flex-col justify-center items-start max-w-4xl">
-      <h1 className="text-7xl font-bold mb-12">
-        Hi 👋,<br /> 
-        I'm Harrison,
-      </h1>
+    <div className="min-h-screen grid grid-rows-3">
+      <div className="row-span-2 flex flex-col items-start max-w-4xl">
+        <h1 className="text-7xl font-bold mb-12">
+          Hi 👋,<br /> 
+          I'm Harrison,
+        </h1>
         <p className="text-lg mb-6 text-[var(--secondary)]">
           Recent Computer Science graduate with a strong foundation in the principles of iterative development, coding
           best practices, modern cloud-based infrastructure, and complex problem solving. Proficient in languages such as
@@ -20,7 +20,7 @@ export default function Home() {
         </p>
         <p className="text-lg mb-6 text-[var(--secondary)]">
           In my free time, I enjoy hiking, photography, and exploring new technologies. Blah blah blah Blah blah blah 
-          Blah blah blah Blah blah Blah blah blah Blah blah blah blah Blah blah blah...{" "}
+          Blah blah blah Blah blah blah Blah blah blah Blah blah blah blah Blah blah blah...{" "}
             <Link href="/about" className="text-blue-600 hover:text-blue-800 underline">
               more
             </Link>
@@ -47,6 +47,9 @@ export default function Home() {
             hoverColor="hover:bg-[var(--accent)]"
           />
         </div>
+      </div>
+      <div className="flex justify-center pt-8">
+        <ChevronsDown size={24} className="text-[var(--secondary)]" />
       </div>
     </div>
   );
