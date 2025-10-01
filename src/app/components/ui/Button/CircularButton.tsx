@@ -24,14 +24,14 @@ export default function CircularButton({
   if (isExternal) {
     return (
       <a href={href} target="_blank" rel="noopener noreferrer" className={buttonClasses}>
-        <Icon size={32} />
+        <Icon size={40} />
       </a>
     );
   }
 
   return (
     <Link href={href} className={buttonClasses}>
-      <Icon size={32} />
+      <Icon size={40} />
     </Link>
   );
 }
