@@ -4,7 +4,7 @@ export default function Work() {
       <h1 className="text-4xl font-bold mb-8">Work Experience</h1>
       <div className="space-y-6">
         <p className="text-lg">
-          Here you'll find information about my professional experience, 
+          Here you&apos;ll find information about my professional experience, 
           roles, and career journey.
         </p>
         <p>

@@ -8,7 +8,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-start"> {/* Center content vertically */}
         <h1 className="text-8xl font-bold mb-12">
           Hi 👋,<br /> 
-          I'm Harrison,
+          I&apos;m Harrison,
         </h1>
         <div className="max-w-4xl">
           <p className="text-base md:text-lg mb-4 md:mb-6 text-[var(--secondary)]">

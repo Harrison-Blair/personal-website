@@ -4,7 +4,7 @@ export default function About() {
       <h1 className="text-4xl font-bold mb-8">About Me</h1>
       <div className="space-y-6">
         <p className="text-lg">
-          Welcome to my about page! This is where I'll share more about my background, 
+          Welcome to my about page! This is where I&apos;ll share more about my background, 
           experience, and what drives me in my work.
         </p>
         <p>
