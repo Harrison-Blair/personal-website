@@ -4,9 +4,9 @@ import { Github, Linkedin, Mail, ChevronsDown } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-between px-4"> {/* Flex layout with padding */}
+    <div className="min-h-screen flex flex-col justify-between p-4"> {/* Flex layout with padding */}
       <div className="flex flex-col justify-center items-start max-w-4xl"> {/* Center content vertically */}
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-12"> {/* Responsive font */}
+        <h1 className="text-7xl font-bold mb-12">
           Hi 👋,<br /> 
           I'm Harrison,
         </h1>
@@ -14,14 +14,14 @@ export default function Home() {
           Recent Computer Science graduate with a strong foundation in the principles of iterative development, coding
           best practices, modern cloud-based infrastructure, and complex problem solving. Proficient in languages such as
           Python, Typescript, C++, and Rust. Experienced working in Agile, CI/CD and remote development teams...{" "}
-            <Link href="/work" className="text-blue-600 hover:text-blue-800 underline">
+            <Link href="/work" className="text-[var(--primary)] hover:text-[var(--accent)] underline">
               more
             </Link>
         </p>
         <p className="text-base md:text-lg mb-4 md:mb-6 text-[var(--secondary)]">
           In my free time, I enjoy hiking, photography, and exploring new technologies. Blah blah blah Blah blah blah 
           Blah blah blah Blah blah Blah blah blah Blah blah blah blah Blah blah blah...{" "}
-            <Link href="/about" className="text-blue-600 hover:text-blue-800 underline">
+            <Link href="/about" className="text-[var(--primary)] hover:text-[var(--accent)] underline">
               more
             </Link>
         </p>
@@ -30,7 +30,7 @@ export default function Home() {
             href="https://github.com/Harrison-Blair"
             icon={Github}
             bgColor="bg-[var(--primary)]"
-            hoverColor="hover:bg-[var(--primary)]/90"
+            hoverColor="hover:bg-[var(--accent)]"
             isExternal={true}
           />
           <CircularButton
@@ -48,7 +48,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex justify-center pb-16">
+      <div className="flex justify-center pb-12">
         <ChevronsDown size={48} className="text-[var(--secondary)]" />
       </div>
     </div>
