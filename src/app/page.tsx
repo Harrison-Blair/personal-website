@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <div className="row-span-2 flex flex-col justify-center items-start max-w-4xl">
-      <h1 className="text-8xl font-bold mb-12">
+      <h1 className="text-7xl font-bold mb-12">
         Hi 👋,<br /> 
         I'm Harrison,
       </h1>
