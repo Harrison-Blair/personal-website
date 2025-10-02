@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import CircularButton from './components/ui/Button/CircularButton';
+import CircularButton from './components/ui/CircularButton';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Home() {
@@ -52,10 +52,9 @@ export default function Home() {
               />
             </div>
           </div>
-          <div>Row 3</div>
+          <div></div>  {/* To add Rookery? */}
         </div>
       </div>
-      <div>Column 3</div>
     </div>
   );
 }
