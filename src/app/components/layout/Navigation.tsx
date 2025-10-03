@@ -1,6 +1,6 @@
 'use client';
 
-import { Home, FileUser, FolderCode, FolderKanban, Briefcase, Mail, Sun, MoonStar } from 'lucide-react';
+import { Home, FileUser, FolderCode, Briefcase, Mail, Sun, MoonStar } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
@@ -30,7 +30,6 @@ export default function Navigation() {
         { href: '/', icon: Home, label: 'Home' },
         { href: '/about', icon: FileUser, label: 'About' },
         { href: '/projects', icon: FolderCode, label: 'Projects' },
-        { href: '/blog', icon: FolderKanban, label: 'Blog' },
         { href: '/work', icon: Briefcase, label: 'Work' },
         { href: '/contact', icon: Mail, label: 'Contact' }
     ];
