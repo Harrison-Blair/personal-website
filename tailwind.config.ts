@@ -17,6 +17,15 @@ const config: Config = {
         sans: ['var(--font-proto)', 'ui-sans-serif', 'system-ui'],
         mono: ['var(--font-proto-mono)', 'ui-monospace', 'SFMono-Regular'],
       },
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        }
+      },
+      animation: {
+        blink: 'blink 1.5s infinite', // Adjust duration and timing as needed
+      }
     },
   },
   plugins: [],

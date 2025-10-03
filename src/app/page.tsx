@@ -1,20 +1,24 @@
 import Link from 'next/link';
 import CircularButton from './components/ui/CircularButton';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import TypewriterText from './components/ui/TypewriterText';
 
 export default function Home() {
   return (
     <div className="grid grid-cols-[2fr_1fr] h-[90vh] w-[90vw] overflow-hidden">
       <div> {/* Column 2/3 of Screen */}
         <div className="grid grid-rows-3 h-full">
-          <div> {/* Welcome Message */}
-            <h1 className="text-[6vh] whitespace-nowrap h-full flex">
+          <div className="text-[6vh]"> {/* Welcome Message */}
+            <h1>
               Hi 👋, <br />
               I&apos;m Harrison, <br />
-              \CylcingText\
+              <TypewriterText 
+              text={["a software engineer", "a tech enthusiast", "a lifelong learner"]}
+              styling="text-[var(--primary)]"
+              />
             </h1>
           </div>
-          <div className="grid grid-rows-3 gap-[10px]">
+          <div className="grid grid-rows-3 gap-[25px]">
             <div>  
               <p className="text-[2vh] text-[var(--secondary)]">
                 I love to build things that matter. I've worked on teams from small VC-backed Startups to Fortune 500 companies, always learning and focused on creating value through thoughtful engineering
