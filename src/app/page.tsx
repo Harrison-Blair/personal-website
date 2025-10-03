@@ -18,7 +18,7 @@ export default function Home() {
                 "a Tech Enthusiast", "a TypeScript Developer",
                 "a Lifelong Learner", "a React Developer",
                 "a Home Cook", "a Python Developer",
-                "an Avid Reader", "aspiring Enterprise Architect",
+                "an Avid Reader", "aspiring Architect",
                     ]}
               styling="text-[var(--primary)]"
               />
