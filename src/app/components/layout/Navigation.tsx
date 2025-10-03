@@ -1,6 +1,6 @@
 'use client';
 
-import { Home, FileUser, FolderCode, FolderKanban, Briefcase, Mail, Sun, MoonStar } from 'lucide-react';
+import { Home, FileUser, FolderCode, Briefcase, Mail, Sun, MoonStar } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
