@@ -30,23 +30,25 @@ export default function Home() {
             <div>
               <p className="text-[2vh] text-[var(--secondary)]">
                 Outside of work, you'll still find me coding. I'm always working on a passion project or trying to learn something new. However, when I am not building software, I enjoy reading, cooking, and tinkering with technology
-                <Link href="/about" className="text-[2vh] underline text-[var(--primary)] hover:text-[var(--accent)]">
+                <Link href="/work" className="text-[2vh] underline text-[var(--primary)] hover:text-[var(--accent)]">
                   ...more
                 </Link>
               </p>
             </div>
             <div className="flex space-x-4">
               <CircularButton
-                href="/contact"
+                href="https://github.com/Harrison-Blair"
                 icon={Github}
                 bgColor="bg-[var(--primary)]"
                 hoverColor="hover:bg-[var(--accent)]"
+                isExternal={true}
               />
               <CircularButton
-                href="/contact"
+                href="https://www.linkedin.com/in/harrison-blair/"
                 icon={Linkedin}
                 bgColor="bg-[var(--primary)]"
                 hoverColor="hover:bg-[var(--accent)]"
+                isExternal={true}
               />
               <CircularButton
                 href="/contact"
