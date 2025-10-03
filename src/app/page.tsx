@@ -1,38 +1,69 @@
-
+import Link from 'next/link';
+import CircularButton from './components/ui/CircularButton';
+import { Github, Linkedin, Mail } from 'lucide-react';
+import TypewriterText from './components/ui/TypewriterText';
 
 export default function Home() {
   return (
-    <div className="font-mono">
-      {/* Test Boxes for Colors */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '20px' }}>
-        <div style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Background</strong><br />
-          var(--background)
-        </div>
-        
-        <div style={{ backgroundColor: 'var(--foreground)', color: 'var(--background)', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Foreground</strong><br />
-          var(--foreground)
-        </div>
-        
-        <div style={{ backgroundColor: 'var(--muted)', color: 'var(--foreground)', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Muted</strong><br />
-          var(--muted)
-        </div>
-        
-        <div style={{ backgroundColor: 'var(--primary)', color: 'white', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Primary</strong><br />
-          var(--primary)
-        </div>
-        
-        <div style={{ backgroundColor: 'var(--secondary)', color: 'var(--foreground)', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Secondary</strong><br />
-          var(--secondary)
-        </div>
-        
-        <div style={{ backgroundColor: 'var(--accent)', color: 'white', padding: '20px', borderRadius: '8px', minWidth: '150px' }}>
-          <strong>Accent</strong><br />
-          var(--accent)
+    <div className="grid grid-cols-[2fr_1fr] h-[90vh] w-[90vw] overflow-hidden">
+      <div> {/* Column 2/3 of Screen */}
+        <div className="grid grid-rows-3 h-full">
+          <div className="text-[6vh]"> {/* Welcome Message */}
+            <h1>
+              Hi 👋, <br />
+              I&apos;m Harrison, <br />
+              <TypewriterText 
+              text={[
+                "a Software Engineer",
+                "a Tech Enthusiast", "a TypeScript Developer",
+                "a Lifelong Learner", "a React Developer",
+                "a Home Cook", "a Python Developer",
+                "an Avid Reader", "aspiring Enterprise Architect",
+                    ]}
+              styling="text-[var(--primary)]"
+              />
+            </h1>
+          </div>
+          <div className="grid grid-rows-3 gap-[25px]">
+            <div>  
+              <p className="text-[2vh] text-[var(--secondary)]">
+                I love to build things that matter. I&apos;ve worked on teams from small VC-backed Startups to Fortune 500 companies, always learning and focused on creating value through thoughtful engineering. {' '}
+                <Link href="/work" className="text-[2vh] underline text-[var(--primary)] hover:text-[var(--accent)]">
+                  (more about the work I&apos;ve done)
+                </Link>
+              </p>
+            </div>
+            <div>
+              <p className="text-[2vh] text-[var(--secondary)]">
+                Outside of work, you&apos;ll still find me coding. I&apos;m always working on a passion project or trying to learn something new. However, when I am not building software, I enjoy reading, cooking, and tinkering with technology. {' '}
+                <Link href="/about" className="text-[2vh] underline text-[var(--primary)] hover:text-[var(--accent)]">
+                  (more about me!)
+                </Link>
+              </p>
+            </div>
+            <div className="flex space-x-4">
+              <CircularButton
+                href="https://github.com/Harrison-Blair"
+                icon={Github}
+                bgColor="bg-[var(--primary)]"
+                hoverColor="hover:bg-[var(--accent)]"
+                isExternal={true}
+              />
+              <CircularButton
+                href="https://www.linkedin.com/in/harrison-blair/"
+                icon={Linkedin}
+                bgColor="bg-[var(--primary)]"
+                hoverColor="hover:bg-[var(--accent)]"
+                isExternal={true}
+              />
+              <CircularButton
+                href="/contact"
+                icon={Mail}
+                bgColor="bg-[var(--primary)]"
+                hoverColor="hover:bg-[var(--accent)]"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
