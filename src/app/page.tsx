@@ -64,7 +64,6 @@ export default function Home() {
               />
             </div>
           </div>
-          <div></div>  {/* To add Rookery? */}
         </div>
       </div>
     </div>
