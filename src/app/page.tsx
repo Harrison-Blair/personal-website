@@ -13,7 +13,13 @@ export default function Home() {
               Hi 👋, <br />
               I&apos;m Harrison, <br />
               <TypewriterText 
-              text={["a software engineer", "a tech enthusiast", "a lifelong learner"]}
+              text={[
+                "a Software Engineer",
+                "a Tech Enthusiast", "a TypeScript Developer",
+                "a Lifelong Learner", "a React Developer",
+                "a Home Cook", "a Python Developer",
+                "an Avid Reader", "aspiring Enterprise Architect",
+                    ]}
               styling="text-[var(--primary)]"
               />
             </h1>
@@ -21,17 +27,17 @@ export default function Home() {
           <div className="grid grid-rows-3 gap-[25px]">
             <div>  
               <p className="text-[2vh] text-[var(--secondary)]">
-                I love to build things that matter. I've worked on teams from small VC-backed Startups to Fortune 500 companies, always learning and focused on creating value through thoughtful engineering
-                <Link href="/about" className="text-[2vh] underline text-[var(--primary)] hover:text-[var(--accent)]">
-                  ...more
+                I love to build things that matter. I&apos;ve worked on teams from small VC-backed Startups to Fortune 500 companies, always learning and focused on creating value through thoughtful engineering
+                <Link href="/work" className="text-[2vh] underline text-[var(--primary)] hover:text-[var(--accent)]">
+                  ...more about the work I&apos;ve done
                 </Link>
               </p>
             </div>
             <div>
               <p className="text-[2vh] text-[var(--secondary)]">
-                Outside of work, you'll still find me coding. I'm always working on a passion project or trying to learn something new. However, when I am not building software, I enjoy reading, cooking, and tinkering with technology
-                <Link href="/work" className="text-[2vh] underline text-[var(--primary)] hover:text-[var(--accent)]">
-                  ...more
+                Outside of work, you&apos;ll still find me coding. I&apos;m always working on a passion project or trying to learn something new. However, when I am not building software, I enjoy reading, cooking, and tinkering with technology
+                <Link href="/about" className="text-[2vh] underline text-[var(--primary)] hover:text-[var(--accent)]">
+                  ...more about me!
                 </Link>
               </p>
             </div>

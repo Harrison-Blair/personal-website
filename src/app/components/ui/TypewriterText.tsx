@@ -14,8 +14,8 @@ interface TypewriterTextProps {
 export default function TypewriterText({
   text,
   styling = '',
-  typeSpeed = 150,
-  deleteSpeed = 100,
+  typeSpeed = 100,
+  deleteSpeed = 50,
   delayBetweenWords = 3000,
   cursor = '|',
 }: Readonly<TypewriterTextProps>) {
