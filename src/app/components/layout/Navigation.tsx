@@ -30,7 +30,6 @@ export default function Navigation() {
         { href: '/', icon: Home, label: 'Home' },
         { href: '/about', icon: FileUser, label: 'About' },
         { href: '/projects', icon: FolderCode, label: 'Projects' },
-        { href: '/blog', icon: FolderKanban, label: 'Blog' },
         { href: '/work', icon: Briefcase, label: 'Work' },
         { href: '/contact', icon: Mail, label: 'Contact' }
     ];
