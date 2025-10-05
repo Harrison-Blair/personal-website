@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Harrison Blair's Personal Website
+[![Deployment Tests](https://github.com/Harrison-Blair/personal-website/actions/workflows/deployment-test.yml/badge.svg)](https://github.com/Harrison-Blair/personal-website/actions/workflows/deployment-test.yml)
+============
+This is the repository holding the code for Harrison Blair's perosnal website and developer portfolio. [You can do whatever you want with this code](/LICENSE).
 
-## Getting Started
+### AI Tools Used
+- [Github Copilot](https://github.com/features/copilot)
+  - [Claude 4.5](https://www.anthropic.com/news/claude-sonnet-4-5)
+  - [Grok Fast Code 1](https://x.ai/news/grok-code-fast-1)
 
-First, run the development server:
+## Tech Stack
+**Website**
+- [Node.js](https://nodejs.org/)
+- [React](https://react.dev/)
+  - [Tailwind (css styling](https://tailwindcss.com/)
+  - [Lucide (icons)](https://lucide.dev/)
+
+**CI/CD**
+- [Github Actions](https://vercel.com/)
+
+**Hosting**
+- [Vercel](https://vercel.com/)
+
+## Setup
+
+`Requirements:` **Node Package Manager >= 11.3.0**
+
+After cloning the repository, open the folder in a terminal and run the following:
 
 ```bash
+npm i
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will install the dependencies for the project, and then launch the development server (by default https://localhost:3000/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Thanks!
+Thanks for checking out my repository! If you want to get in contact with me, check out the hosted website @ [harrison-blair.dev](https://www.harrison-blair.dev)
