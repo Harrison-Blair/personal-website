@@ -1,5 +1,5 @@
 Harrison Blair's Personal Website
-[![Deployment Tests](https://github.com/Harrison-Blair/personal-website/actions/workflows/deployment-test.yml/badge.svg)](https://github.com/Harrison-Blair/personal-website/actions/workflows/deployment-test.yml)
+[![Build and Lint](https://github.com/Harrison-Blair/personal-website/actions/workflows/build-and-lint.yml/badge.svg)](https://github.com/Harrison-Blair/personal-website/actions/workflows/build-and-lint.yml)
 ============
 This is the repository holding the code for Harrison Blair's perosnal website and developer portfolio. [You can do whatever you want with this code](/LICENSE).
 
