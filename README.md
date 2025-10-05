@@ -35,5 +35,14 @@ npm run dev
 
 This will install the dependencies for the project, and then launch the development server (by default https://localhost:3000/)
 
+## Documentation
+
+### Hosting Provider Research
+This project includes comprehensive research on cloud hosting providers. See:
+- [Quick Reference Guide](docs/HOSTING-QUICK-REFERENCE.md) - TL;DR recommendations
+- [Full Research Document](docs/hosting-provider-research.md) - Detailed analysis of all options
+
+**Current Hosting**: [Vercel](https://vercel.com/) (recommended for Next.js projects)
+
 ## Thanks!
 Thanks for checking out my repository! If you want to get in contact with me, check out the hosted website @ [harrison-blair.dev](https://www.harrison-blair.dev)
