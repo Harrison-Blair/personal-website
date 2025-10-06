@@ -20,29 +20,43 @@ export default function Contact() {
                                 href="https://www.linkedin.com/in/harrison-blair"
                                 icon={Linkedin}
                                 text="LinkedIn"
-                                bgColor="bg-blue-500"
-                                hoverColor="hover:bg-blue-600"
+                                bgColor="bg-[var(--primary)]"
+                                hoverColor="hover:bg-[var(--accent)]"
                                 isExternal={true}
                                 width="75%"
                                 height="5vh"
-                                styling="text-[2vh]"
+                                styling="text-[2vh] text-white"
                             />
                             <RectangularButton
                                 href="mailto:example@example.com"
                                 icon={Mail}
                                 text="Email Me"
-                                bgColor="bg-blue-500"
-                                hoverColor="hover:bg-blue-600"
+                                bgColor="bg-[var(--primary)]"
+                                hoverColor="hover:bg-[var(--accent)]"
                                 isExternal={true}
                                 width="75%"
                                 height="5vh"
-                                styling="text-[2vh]"
+                                styling="text-[2vh] text-white"
                             />
                         </div>
                     </div>
                 </div>
                 <div> {/* Contact Form Here */}
-
+                    <div className="bg-[var(--muted)] h-full rounded-[5rem] ml-10 p-10">
+                        <form className="text-[var(--primary)]">
+                            <div className="flex justify-center gap-4">
+                                <input type="text" placeholder="Your Name" className="w-1/2 h-[4vh] rounded-lg px-3 bg-[var(--muted)] text-[var(--foreground)] border border-[var(--primary)]"/>
+                                <input type="email" placeholder="Your Email" className="w-1/2 h-[4vh] rounded-lg px-3 bg-[var(--muted)] text-[var(--foreground)] border border-[var(--primary)]"/>
+                            </div>
+                            <input type="text" placeholder="Subject" className="w-full h-[4vh] rounded-lg px-3 mt-4 bg-[var(--muted)] text-[var(--foreground)] border border-[var(--primary)]"/>
+                            <textarea placeholder="Your Message" className="w-full h-[50vh] rounded-lg px-3 mt-4 pt-2 resize-none bg-[var(--muted)] text-[var(--foreground)] border border-[var(--primary)]"/>
+                            <div className="flex justify-center mt-4">
+                                <button type="submit" className="bg-[var(--primary)] hover:bg-[var(--accent)] text-white rounded-lg px-6 py-2">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
