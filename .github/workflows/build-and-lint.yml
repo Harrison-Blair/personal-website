@@ -1,12 +1,15 @@
-name: Deployment Tests
+name: Build and Lint
 
 on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
 
 jobs:
-  test-deployment:
+  build-and-lint:
     runs-on: ubuntu-latest
     
     steps:

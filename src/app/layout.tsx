@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navigation from "./components/layout/Navigation/Navigation";
+import Navigation from "./components/layout/Navigation";
 
 const protoNF = localFont({
   src: "./fonts/0xProtoNerdFont-Regular.woff",
