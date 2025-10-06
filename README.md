@@ -1,5 +1,5 @@
 Harrison Blair's Personal Website
-[![Build and Lint](https://github.com/Harrison-Blair/personal-website/actions/workflows/build-and-lint.yml/badge.svg)](https://github.com/Harrison-Blair/personal-website/actions/workflows/build-and-lint.yml)
+[![Build and Lint](https://github.com/Harrison-Blair/personal-website/actions/workflows/build-and-lint.yml/badge.svg?branch=main)](https://github.com/Harrison-Blair/personal-website/actions/workflows/build-and-lint.yml)
 ============
 This is the repository holding the code for Harrison Blair's perosnal website and developer portfolio. [You can do whatever you want with this code](/LICENSE).
 
