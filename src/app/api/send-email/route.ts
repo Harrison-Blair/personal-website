@@ -3,6 +3,16 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Simple HTML escape function to prevent injection
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 export async function POST(request: NextRequest) {
   try {
     const { name, email, subject, message } = await request.json();
@@ -14,19 +24,25 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Escape user inputs to prevent HTML injection
+    const escapedName = escapeHtml(name);
+    const escapedEmail = escapeHtml(email);
+    const escapedSubject = escapeHtml(subject);
+    const escapedMessage = escapeHtml(message);
+
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev', // Replace with your domain in production
       to: process.env.RESEND_DESTINATION_EMAIL!,
-      subject: `${name} : ${subject}`,
+      subject: `${escapedName} : ${escapedSubject}`,
       html: `
         <h2>New Contact Form Submission</h2>
         <hr />
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Name:</strong> ${escapedName}</p>
+        <p><strong>Email:</strong> ${escapedEmail}</p>
+        <p><strong>Subject:</strong> ${escapedSubject}</p>
         <br />
         <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
+        <p>${escapedMessage.replace(/\n/g, '<br>')}</p>
       `,
       replyTo: email,
     });
