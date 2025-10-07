@@ -57,6 +57,14 @@ export default function Work() {
               </p>
             </div>
           </div>
+          <div className="bg-[var(--muted)] rounded-[2.5rem] m-4 p-4 ">
+            <div className="flex flex-col p-4 gap-2">
+              <h2 className="text-[2.5vh] text-[var(--primary)]">
+                Skills
+              </h2>
+              
+            </div>
+          </div>
         </div>
         <div> {/* Main Content - 2/3 of Screen */}
           
