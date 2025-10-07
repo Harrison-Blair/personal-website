@@ -39,6 +39,24 @@ export default function Work() {
               isDownload={true}
             />
           </div>
+          <div className="bg-[var(--muted)] rounded-[2.5rem] m-4 p-4 ">
+            <div className="flex flex-col p-4 gap-2">
+              <h2 className="text-[2.5vh] text-[var(--primary)]">
+                Education
+              </h2>
+              <a 
+              href="https://www.champlain.edu" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-[var(--accent)] text-[1.5vh]"
+              >
+              Champlain College - Burlington, VT
+              </a>
+              <p className="text-[1.5vh]">
+                B.S. in Computer Science, Minor in Cybersecurity
+              </p>
+            </div>
+          </div>
         </div>
         <div> {/* Main Content - 2/3 of Screen */}
           
