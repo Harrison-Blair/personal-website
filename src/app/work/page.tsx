@@ -84,8 +84,10 @@ export default function Work() {
         <div> {/* Main Content - 2/3 of Screen */}
           <div className="bg-[var(--muted)] rounded-[2.5rem] m-4 p-4 ">
             <div className="flex flex-col m-4">
-              <p>
-                Description....
+              <p className="text-[1.5vh]">
+                Recent Computer Science graduate with a strong foundation in the principles of iterative development, coding
+                best practices, modern cloud-based infrastructure, and complex problem solving. Proficient in languages such as
+                Python, Typescript, C++, and Rust. Experienced working in Agile, CI/CD and remote development teams.
               </p>
             </div>
           </div>
