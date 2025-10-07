@@ -59,9 +59,9 @@ export default function Work() {
                 href="https://www.champlain.edu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[var(--accent)] text-[1.5vh]"
+                className="hover:text-[var(--accent)] text-[1.5vh] italic"
               >
-                Champlain College - Burlington, VT
+                Champlain College - Burlington, VT - Class of 2025
               </a>
               <p className="text-[1.5vh]">
                 B.S. in Computer Science, Minor in Cybersecurity
