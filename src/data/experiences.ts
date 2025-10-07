@@ -1,4 +1,5 @@
 export interface Experience {
+    id: string;
     company: string;
     role: string;
     location?: string;
@@ -10,6 +11,7 @@ export interface Experience {
 
 export const experiences: Experience[] = [
     {
+        id: '202410-1',
         role: 'Software Engineer Intern',
         company: 'Tech Solutions Inc.',
         startDate: 'January 2022',
@@ -17,4 +19,19 @@ export const experiences: Experience[] = [
         description: 'Developed internal tools using React and Node.js, improving team productivity by 15%. Collaborated with cross-functional teams to design and implement new features.',
         link: 'https://www.techsolutions.com',
     },
+    {
+        id: '202410-2',
+        role: 'Software Engineer Intern',
+        company: 'Tech Solutions Inc.',
+        startDate: 'January 2022',
+        endDate: 'April 2022',
+        description: [
+            'Developed internal tools using React and Node.js, improving team productivity by 15%.',
+            'Collaborated with cross-functional teams to design and implement new features.',
+            'Wrote unit and integration tests to ensure code quality and reliability.',
+            'Participated in code reviews and contributed to team knowledge sharing sessions.'
+        ],
+        link: 'https://www.techsolutions.com',
+    },
+    
 ]

@@ -1,5 +1,8 @@
 import { FileDown, Github, Linkedin, Mail } from "lucide-react";
 import CircularButton from "../components/ui/CircularButton";
+import ExperienceTile from "../components/ui/ExperienceTile";
+
+import { experiences } from "@/data/experiences";
 
 export default function Work() {
   return (
@@ -79,7 +82,14 @@ export default function Work() {
               Experience
             </h2>
             <hr className="border-[var(--primary)] border-[1.5px]" />
-
+            <div className="flex flex-col">
+              {experiences.map((experience) => (
+                <ExperienceTile 
+                  key={experience.id}
+                  experience={experience}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
