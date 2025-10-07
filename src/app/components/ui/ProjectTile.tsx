@@ -1,4 +1,4 @@
-import { Project } from "../../../../data/projects";
+import { Project } from "../../../data/projects";
 
 export default function ProjectTile({ project }: { project: Project }) {
   return (
