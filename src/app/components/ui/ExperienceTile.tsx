@@ -1,5 +1,6 @@
 import { Experience } from "@/data/experiences";
 import { Link } from "lucide-react"
+import SmallTag from "./SmallTag";
 
 export interface ExperienceTileProps {
     experience: Experience;
@@ -39,7 +40,11 @@ export default function ExperienceTile({
             ) : (
                 <p className="text-[1.25vh] mb-2 ml-2">{experience.description}</p>
             )}
-            
+            <div className="flex flex-wrap gap-2 mt-2">
+                {experience.tags?.map((tag, index) => (
+                    <SmallTag key={index} text={tag} />
+                ))}
+            </div>
         </div>
     );
 }
