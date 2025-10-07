@@ -12,18 +12,19 @@ This is the repository holding the code for Harrison Blair's personal website an
 **Website**
 - [Node.js](https://nodejs.org/)
 - [React](https://react.dev/)
-  - [Tailwind (css styling](https://tailwindcss.com/)
+  - [Tailwind (css styling)](https://tailwindcss.com/)
   - [Lucide (icons)](https://lucide.dev/)
+- [Resend (contact form functionality)](https://resend.com)
 
 **CI/CD**
-- [Github Actions](https://vercel.com/)
+- [Github Actions](https://github.com/features/actions)
 
 **Hosting**
 - [Vercel](https://vercel.com/)
 
 ## Setup
 
-`Requirements:` **Node Package Manager >= 11.3.0**
+**Requirements:** `Node Package Manager >= 11.3.0`
 
 After cloning the repository, open the folder in a terminal and run the following:
 
@@ -34,6 +35,16 @@ npm run dev
 ```
 
 This will install the dependencies for the project, and then launch the development server (by default https://localhost:3000/)
+
+## Config
+
+In order to use the full functionality of the website, [you will need an API key from resend](https://resend.com). Their service is what allows the contact form to actually send you an email. **There is no built in rate limiting**. Production use of this website uses rate limiting through the hosting provider.
+
+Navigate to the `.env.example` file, and copy it into (or create a new) `.env.local` file.
+
+Replace the contents of the file with the actual data (correct email, Resend API key).
+
+If you plan to host this on something other than Vercel, then you may need to create a .env file to manage production environment variables. Refer to your hosting service's provider for more information.
 
 ## Thanks!
 Thanks for checking out my repository! If you want to get in contact with me, check out the hosted website @ [harrison-blair.dev](https://www.harrison-blair.dev)
