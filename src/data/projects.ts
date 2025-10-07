@@ -5,6 +5,7 @@ export interface Project {
   link: string;
   tags: string[];
   imageUrl?: string;
+  pinned?: boolean;
 }
 
 export const projects: Project[] = [
@@ -14,6 +15,8 @@ export const projects: Project[] = [
     description: 'A portfolio site built with Next.js and Tailwind.',
     link: 'https://github.com/Harrison-Blair/personal-website',
     tags: ['Next.js', 'React', 'TypeScript'],
+    imageUrl: '/images/Website-Homepage.png',
+    pinned: true,
   },
   // Add more projects here
 ];

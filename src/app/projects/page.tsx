@@ -1,14 +1,22 @@
+import { projects } from "@/data/projects";
+import ProjectTile from "../components/ui/ProjectTile";
+
 export default function Projects() {
   return (
-    <div className="max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold mb-8">Projects</h1>
-      <div className="space-y-6">
-        <p className="text-lg">
-          Here you&apos;ll find information about my personal and professional projects.
-        </p>
-        <p>
-          Project details coming soon...
-        </p>
+    <div>
+      <h1 className='text-[6.5vh]'>Projects</h1>
+      <p className='text-[2vh]'>Here is a selection of my open source work.</p>
+      <h2 className='text-[4vh] mt-4'>Pinned Projects</h2>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8'>
+        {projects.filter(project => project.pinned).map((project) => (
+          <ProjectTile key={project.id} project={project} />
+        ))}
+      </div>
+      <h2 className='text-[4vh] mt-4'>All Projects</h2>
+      <div className='grid grid-cols-3 gap-4'>
+        {projects.map((project) => (
+          <ProjectTile key={project.id} project={project} />
+        ))}
       </div>
     </div>
   );
