@@ -5,7 +5,7 @@ export interface Experience {
     startDate: string;
     endDate: string;
     description: string | string[];
-    tags?: string[];
+    tags: string[];
     link?: string;
 }
 
@@ -17,6 +17,7 @@ export const experiences: Experience[] = [
         startDate: 'January 2022',
         endDate: 'April 2022',
         description: 'Developed internal tools using React and Node.js, improving team productivity by 15%. Collaborated with cross-functional teams to design and implement new features.',
+        tags: ['React', 'Node.js', 'TypeScript', 'Agile'],
         link: 'https://www.techsolutions.com',
     },
     {
@@ -31,6 +32,7 @@ export const experiences: Experience[] = [
             'Wrote unit and integration tests to ensure code quality and reliability.',
             'Participated in code reviews and contributed to team knowledge sharing sessions.'
         ],
+        tags: ['React', 'Node.js', 'TypeScript', 'Agile'],
         link: 'https://www.techsolutions.com',
     },
     
