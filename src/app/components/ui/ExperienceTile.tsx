@@ -32,13 +32,13 @@ export default function ExperienceTile({
             </h3>
             <p className="text-[1.25vh] italic mb-2">{experience.startDate} {' - '} {experience.endDate}</p>
             {Array.isArray(experience.description) ? (
-                <ul className="list-disc list-inside text-[1.25vh] mb-2 ml-2">
+                <ul className="list-disc list-inside text-[1.25vh] mb-3 ml-2">
                     {experience.description.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
                 </ul>
             ) : (
-                <p className="text-[1.25vh] mb-2 ml-2">{experience.description}</p>
+                <p className="text-[1.25vh] mb-3 ml-2">{experience.description}</p>
             )}
             <div className="flex flex-wrap gap-2 mt-2">
                 {experience.tags?.map((tag, index) => (
