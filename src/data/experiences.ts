@@ -5,6 +5,7 @@ export interface Experience {
     startDate: string;
     endDate: string;
     description: string | string[];
+    tags?: string[];
     link?: string;
 }
 
