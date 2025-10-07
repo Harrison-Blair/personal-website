@@ -13,7 +13,7 @@ export default function ExperienceTile({
 }: ExperienceTileProps) {
     return (
         <div className={`bg-[var(--muted)] rounded-3xl p-4 m-4 ${styling}`}>
-            <h3 className="text-[1.5vh] font-semibold mb-2">
+            <h3 className="text-[2vh] font-semibold mb-2">
                 {experience.role} @ 
                 { experience.link ? (
                     <a
@@ -24,7 +24,7 @@ export default function ExperienceTile({
                     >
                         {' '}
                         {experience.company}
-                        <Link className="inline mb-1 ml-1" size={'1.5vh'} />
+                        <Link className="inline mb-1 ml-1" size={'2vh'} />
                     </a>
                 ) : (
                     <span>{' '}{experience.company}</span>
@@ -32,13 +32,13 @@ export default function ExperienceTile({
             </h3>
             <p className="text-[1.25vh] italic mb-2">{experience.startDate} {' - '} {experience.endDate}</p>
             {Array.isArray(experience.description) ? (
-                <ul className="list-disc list-inside text-[1.25vh] mb-3 ml-2">
+                <ul className="list-disc list-inside text-[1.5vh] mb-3 ml-2">
                     {experience.description.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
                 </ul>
             ) : (
-                <p className="text-[1.25vh] mb-3 ml-2">{experience.description}</p>
+                <p className="text-[1.5vh] mb-3 ml-2">{experience.description}</p>
             )}
             <div className="flex flex-wrap gap-2">
                 {experience.tags?.map((tag, index) => (

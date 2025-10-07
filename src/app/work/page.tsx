@@ -61,7 +61,7 @@ export default function Work() {
           </div>
           <div className="bg-[var(--muted)] rounded-[2.5rem] m-4 p-4 ">
             <div className="flex flex-col p-4 gap-2">
-              <h2 className="text-[2.5vh] text-[var(--primary)]">
+              <h2 className="text-[3vh] text-[var(--primary)]">
                 Education
               </h2>
               <a
@@ -72,14 +72,14 @@ export default function Work() {
               >
                 Champlain College - Burlington, VT - Class of 2025
               </a>
-              <p className="text-[1.5vh]">
+              <p className="text-[2vh]">
                 B.S. in Computer Science, Minor in Cybersecurity
               </p>
             </div>
           </div>
           <div className="bg-[var(--muted)] rounded-[2.5rem] m-4 p-4 ">
             <div className="flex flex-col m-4 gap-2">
-              <h2 className="text-[2.5vh] text-[var(--primary)]">
+              <h2 className="text-[3vh] text-[var(--primary)]">
                 Skills
               </h2>
               <div className="flex flex-wrap gap-2">
@@ -93,7 +93,7 @@ export default function Work() {
         <div> {/* Main Content - 2/3 of Screen */}
           <div className="bg-[var(--muted)] rounded-[2.5rem] m-4 p-4 ">
             <div className="flex flex-col m-4">
-              <p className="text-[1.5vh]">
+              <p className="text-[2vh]">
                 Recent Computer Science graduate with a strong foundation in the principles of iterative development, coding
                 best practices, modern cloud-based infrastructure, and complex problem solving. Proficient in languages such as
                 Python, Typescript, C++, and Rust. Experienced working in Agile, CI/CD and remote development teams.
