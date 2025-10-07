@@ -1,6 +1,7 @@
+import Image from 'next/image';
 import { Github } from "lucide-react";
+
 import { Project } from "../../../data/projects";
-import RectangularButton from "./RectangularButton";
 
 export interface ProjectTileProps {
   project: Project;
@@ -20,9 +21,11 @@ export default function ProjectTile({
     >
       <div className='p-4 flex flex-col h-full items-center text-center'>
         {project.imageUrl ? (
-          <img 
+          <Image 
             src={project.imageUrl} 
             alt={project.title || 'Project image'} 
+            width={260}
+            height={200}
             className="w-[26vh] h-[20vh] object-cover rounded-2xl mb-4 border-[var(--primary)] border" 
           />
         ) : (
