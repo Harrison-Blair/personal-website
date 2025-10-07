@@ -1,4 +1,5 @@
 import { FileDown, Github, Linkedin, Mail } from "lucide-react";
+import Image from 'next/image';
 import CircularButton from "../components/ui/CircularButton";
 import ExperienceTile from "../components/ui/ExperienceTile";
 
@@ -20,6 +21,14 @@ export default function Work() {
       </h1>
       <div className="grid grid-cols-[1fr_2fr] gap-4">
         <div> {/* Sidebar - 1/3 of Screen */}
+          <div className="relative w-3/5 aspect-square m-4 mx-auto">
+            <Image
+              src="/images/Website-Homepage.png"
+              alt="Profile Picture"
+              fill
+              className="object-cover rounded-full border-[var(--primary)] border-4"
+            />
+          </div>
           <div className="flex flex-row gap-4 justify-center">
             <CircularButton
               href="https://github.com/Harrison-Blair"
