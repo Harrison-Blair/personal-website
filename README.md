@@ -44,7 +44,7 @@ Navigate to the `.env.example` file, and copy it into (or create a new) `.env.lo
 
 Replace the contents of the file with the actual data (correct email, Resend API key).
 
-If you plan to host this on something other than Vercel, then you may need to create a .env file to manage production enviornment variables. Refer to your hosting service's provider for more information.
+If you plan to host this on something other than Vercel, then you may need to create a .env file to manage production environment variables. Refer to your hosting service's provider for more information.
 
 ## Thanks!
 Thanks for checking out my repository! If you want to get in contact with me, check out the hosted website @ [harrison-blair.dev](https://www.harrison-blair.dev)
