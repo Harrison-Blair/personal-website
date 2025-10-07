@@ -39,6 +39,7 @@ export default function ExperienceTile({
             ) : (
                 <p className="text-[1.25vh] mb-2 ml-2">{experience.description}</p>
             )}
+            
         </div>
     );
 }
