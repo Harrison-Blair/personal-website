@@ -4,11 +4,11 @@ import "./globals.css";
 import Navigation from "./components/layout/Navigation";
 
 const protoNF = localFont({
-  src: "../assets/fonts/0xProtoNerdFont-Regular.woff",
+  src: "./fonts/0xProtoNerdFont-Regular.woff",
   variable: "--font-proto",
 });
 const protoMonoNF = localFont({
-  src: "../assets/fonts/0xProtoNerdFontMono-Regular.woff",
+  src: "./fonts/0xProtoNerdFontMono-Regular.woff",
   variable: "--font-proto-mono",
 });
 
