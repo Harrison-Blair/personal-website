@@ -3,8 +3,16 @@ import CircularButton from "../components/ui/CircularButton";
 import ExperienceTile from "../components/ui/ExperienceTile";
 
 import { experiences } from "@/data/experiences";
+import Tag from "../components/ui/Tag";
 
 export default function Work() {
+  // Collect unique tags from all experiences
+  const uniqueTags = Array.from(
+    new Set(
+      experiences.flatMap(exp => exp.tags || [])
+    )
+  );
+
   return (
     <div>
       <h1 className="text-[6.5vh]">
@@ -65,7 +73,11 @@ export default function Work() {
               <h2 className="text-[2.5vh] text-[var(--primary)]">
                 Skills
               </h2>
-
+              <div className="flex flex-wrap gap-2">
+                {uniqueTags.map((tag, index) => (
+                  <Tag key={index} text={tag} styling='px-5 py-2 text-[1.6vh]' />
+                ))}
+              </div>
             </div>
           </div>
         </div>
