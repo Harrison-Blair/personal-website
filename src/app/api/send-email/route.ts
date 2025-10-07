@@ -19,6 +19,8 @@ export async function POST(request: NextRequest) {
       to: process.env.RESEND_DESTINATION_EMAIL!,
       subject: `${name} : ${subject}`,
       html: `
+        <h2>New Contact Form Submission</h2>
+        <hr />
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Subject:</strong> ${subject}</p>
