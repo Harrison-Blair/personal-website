@@ -42,7 +42,7 @@ In order to use the full functionality of the website, [you will need an API key
 
 Navigate to the `.env.example` file, and copy it into (or create a new) `.env.local` file.
 
-Replace the cotnets of the file with the actual data (correct email, Resend API key).
+Replace the contents of the file with the actual data (correct email, Resend API key).
 
 If you plan to host this on something other than Vercel, then you may need to create a .env file to manage production enviornment variables. Refer to your hosting service's provider for more information.
 
