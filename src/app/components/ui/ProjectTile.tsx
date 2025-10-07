@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Github } from "lucide-react";
 
 import { Project } from "../../../data/projects";
-import SmallTag from './SmallTag';
+import SmallTag from './Tag';
 
 export interface ProjectTileProps {
   project: Project;
