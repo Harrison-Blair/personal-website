@@ -79,7 +79,7 @@ export default function Contact() {
                                 styling="text-[2vh] text-white"
                             />
                             <RectangularButton
-                                href="mailto:example@example.com"
+                                href={`mailto:${process.env.NEXT_PUBLIC_RESEND_DESTINATION_EMAIL}`}
                                 icon={Mail}
                                 text="Email Me"
                                 bgColor="bg-[var(--primary)]"
