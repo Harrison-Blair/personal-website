@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Github } from "lucide-react";
 
 import { Project } from "../../../data/projects";
+import SmallTag from './Tag';
 
 export interface ProjectTileProps {
   project: Project;
@@ -40,12 +41,7 @@ export default function ProjectTile({
         </div>
         <div className='flex flex-wrap gap-2 justify-center mt-auto'>
           {project.tags?.map((tag, index) => (
-            <span 
-              key={index}
-              className='px-3 py-1 bg-[var(--primary)] text-[var(--foreground)] rounded-full text-[1.2vh]'
-            >
-              {tag}
-            </span>
+            <SmallTag key={index} text={tag} />
           ))}
         </div>
       </div>
