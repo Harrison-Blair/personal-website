@@ -26,6 +26,10 @@ body {
   font-family: var(--font-proto-mono);
 }
 
+* {
+  transition: all 0.3s ease;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
