@@ -36,6 +36,7 @@ export default function Work() {
               bgColor="bg-[var(--primary)]"
               hoverColor="hover:bg-[var(--accent)]"
               isExternal={true}
+              size='8vh'
             />
             <CircularButton
               href="https://www.linkedin.com/in/harrison-blair/"
@@ -43,6 +44,7 @@ export default function Work() {
               bgColor="bg-[var(--primary)]"
               hoverColor="hover:bg-[var(--accent)]"
               isExternal={true}
+              size='8vh'
             />
             <CircularButton
               href="/contact"
@@ -50,6 +52,7 @@ export default function Work() {
               bgColor="bg-[var(--primary)]"
               hoverColor="hover:bg-[var(--accent)]"
               isExternal={false}
+              size='8vh'
             />
             <CircularButton
               href="/images/Website-Homepage.png"
@@ -57,6 +60,7 @@ export default function Work() {
               bgColor="bg-[var(--primary)]"
               hoverColor="hover:bg-[var(--accent)]"
               isDownload={true}
+              size='8vh'
             />
           </div>
           <div className="bg-[var(--muted)] rounded-[2.5rem] m-4 p-4 ">
