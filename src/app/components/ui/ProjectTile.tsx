@@ -18,7 +18,7 @@ export default function ProjectTile({
       href={project.link} 
       target="_blank" 
       rel="noopener noreferrer" 
-      className={`w-[30vh] h-[45vh] bg-[var(--muted)] rounded-3xl block hover:bg-[var(--accent)] transition-colors cursor-pointer ${styling}`}
+      className={`w-[50%] bg-[var(--muted)] rounded-3xl block hover:bg-[var(--accent)] transition-colors cursor-pointer ${styling}`}
     >
       <div className='p-4 flex flex-col h-full items-center text-center'>
         {project.imageUrl ? (
@@ -27,10 +27,10 @@ export default function ProjectTile({
             alt={project.title || 'Project image'} 
             width={260}
             height={200}
-            className="w-[26vh] h-[20vh] object-cover rounded-2xl mb-4 border-[var(--primary)] border" 
+            className="object-cover rounded-2xl mb-4 border-[var(--primary)] border" 
           />
         ) : (
-          <div className="w-[26vh] h-[20vh] bg-[var(--secondary)] rounded-2xl flex items-center justify-center mb-4">
+          <div className="bg-[var(--secondary)] rounded-2xl flex items-center justify-center mb-4 w-[260px] h-[200px]">
             <Github size={48} className="text-[var(--foreground)]" />
           </div>
         )}
@@ -39,7 +39,7 @@ export default function ProjectTile({
           <hr className='w-full border-t border-[var(--secondary)] mb-2' />
           <p className='text-[1.5vh] mb-4'>{project.description}</p>
         </div>
-        <div className='flex flex-wrap gap-2 justify-center mt-auto'>
+        <div className='flex flex-wrap gap-1.5 justify-center'>
           {project.tags?.map((tag, index) => (
             <SmallTag key={index} text={tag} />
           ))}

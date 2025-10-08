@@ -39,15 +39,15 @@ export default function Navigation() {
     ];
 
     return (
-        <nav className="fixed left-0 top-0 h-full w-[var(--nav-width)] bg-[var(--muted)] flex flex-col items-center justify-between py-[clamp(1rem,2vh,2rem)]">
+        <nav className="fixed left-0 top-0 h-full w-[var(--nav-width)] bg-[var(--muted)] flex flex-col items-center justify-between py-[3vh]">
             <ul className="flex flex-col">
                 {topNavItems.map(({ href, icon: Icon, label }) => (
                     <li key={href}>
                         <Link
                             href={href}
                             title={label}
-                            className={`flex items-center justify-center w-[5vw] h-[5vh] mb-[3vw] rounded transition-colors relative ${pathname === href
-                                    ? 'text-[var(--foreground)] border-l-2 border-[var(--primary)]'
+                            className={`flex items-center justify-center w-[5vw] h-[5vh] mb-[2vw] transition-colors relative ${pathname === href
+                                    ? 'text-[var(--foreground)] border-l-[0.33vw] border-[var(--primary)]'
                                     : 'text-[var(--secondary)] hover:text-[var(--accent)]'
                                 }`}
                         >
