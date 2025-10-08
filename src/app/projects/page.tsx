@@ -14,6 +14,7 @@ export default function Projects() {
                 bgColor="bg-[var(--primary)]"
                 hoverColor="hover:bg-[var(--accent)]"
                 isExternal={true}
+                size='7vh'
       />
       <h2 className='text-[4vh] mt-4 mb-2 underline underline-offset-4 text-[var(--primary)]'>Pinned Projects 📌</h2>
       <div className='grid grid-cols-3 gap-4 mb-4'>
