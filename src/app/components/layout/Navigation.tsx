@@ -46,8 +46,8 @@ export default function Navigation() {
                         <Link
                             href={href}
                             title={label}
-                            className={`flex items-center justify-center w-[5vw] h-[5vh] mb-[2vw] rounded transition-colors relative ${pathname === href
-                                    ? 'text-[var(--foreground)] border-l-[0.5vw] border-[var(--primary)]'
+                            className={`flex items-center justify-center w-[5vw] h-[5vh] mb-[2vw] transition-colors relative ${pathname === href
+                                    ? 'text-[var(--foreground)] border-l-[0.33vw] border-[var(--primary)]'
                                     : 'text-[var(--secondary)] hover:text-[var(--accent)]'
                                 }`}
                         >
