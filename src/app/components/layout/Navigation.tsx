@@ -47,7 +47,7 @@ export default function Navigation() {
                             href={href}
                             title={label}
                             className={`flex items-center justify-center w-[5vw] h-[5vh] mb-[3vw] rounded transition-colors relative ${pathname === href
-                                    ? 'text-[var(--foreground)] border-l-2 border-[var(--primary)]'
+                                    ? 'text-[var(--foreground)] border-l-[0.5vw] border-[var(--primary)]'
                                     : 'text-[var(--secondary)] hover:text-[var(--accent)]'
                                 }`}
                         >
