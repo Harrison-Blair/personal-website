@@ -110,11 +110,15 @@ export default function Work() {
             </h2>
             <hr className="border-[var(--primary)] border-[1.5px]" />
             <div className="flex flex-col">
-              {experiences.map((experience) => (
-                <ExperienceTile 
-                  key={experience.id}
-                  experience={experience}
-                />
+              {experiences.map((experience, index) => (
+                <div key={experience.id}>
+                  <ExperienceTile 
+                    experience={experience}
+                  />
+                  {index < experiences.length - 1 && (
+                    <div className="h-8 w-1 bg-[var(--primary)] mx-auto -mt-4 -mb-4"></div>
+                  )}
+                </div>
               ))}
             </div>
           </div>
