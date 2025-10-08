@@ -9,7 +9,7 @@
   --primary: #2563eb;
   --secondary: #6c757d;
   --accent: #0ea5e9;
-  --nav-width: clamp(3.5vw, 4.5vw, 5.5vw);
+  --nav-width: 5vw;
 }
 
 .dark {

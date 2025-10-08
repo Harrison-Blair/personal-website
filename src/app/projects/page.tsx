@@ -15,13 +15,13 @@ export default function Projects() {
                 hoverColor="hover:bg-[var(--accent)]"
                 isExternal={true}
       />
-      <h2 className='text-[4vh] mt-4 underline'>Pinned Projects 📌</h2>
-      <div className='grid grid-cols-3 gap-4 mb-8'>
+      <h2 className='text-[4vh] mt-4 mb-2 underline underline-offset-4 text-[var(--primary)]'>Pinned Projects 📌</h2>
+      <div className='grid grid-cols-3 gap-4 mb-4'>
         {projects.filter(project => project.pinned).map((project) => (
           <ProjectTile key={project.id} project={project} />
         ))}
       </div>
-      <h2 className='text-[4vh] mt-4 underline'>All Projects</h2>
+      <h2 className='text-[4vh] mt-4 mb-2 underline underline-offset-4 text-[var(--primary)]'>All Projects</h2>
       <div className='grid grid-cols-3 gap-4 mb-8'>
         {projects.map((project) => (
           <ProjectTile key={project.id} project={project} />
