@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${protoNF.variable} ${protoMonoNF.variable} antialiased`}>
         <Navigation />
-        <main className="flex-1 ml-20 p-8">
+        <main className="ml-[var(--nav-width)] p-8">
           {children}
         </main>
       </body>
