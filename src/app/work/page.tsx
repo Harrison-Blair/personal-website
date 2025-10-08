@@ -16,7 +16,7 @@ export default function Work() {
 
   return (
     <div>
-      <h1 className="text-[6.5vh]">
+      <h1 className="text-[3.5vw]">
         Harrison Blair
       </h1>
       <div className="grid grid-cols-[1fr_2fr]">

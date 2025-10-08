@@ -6,7 +6,7 @@ import { Github } from "lucide-react";
 export default function Projects() {
   return (
     <div>
-      <h1 className='text-[6.5vh]'>Projects</h1>
+      <h1 className='text-[3.5vw]'>Projects</h1>
       <p className='text-[2vh] mb-4'>Here is a selection of my open source work.</p>
       <CircularButton
                 href="https://github.com/Harrison-Blair"
