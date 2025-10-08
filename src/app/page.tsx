@@ -5,7 +5,7 @@ import TypewriterText from './components/ui/TypewriterText';
 
 export default function Home() {
   return (
-    <div className="overflow-hidden w-[66%]">
+    <div className="overflow-hidden w-[66%] h-[90vh]">
       <div className="grid h-full">
         <div className="text-[6vh] mb-8"> {/* Welcome Message */}
           <h1>
