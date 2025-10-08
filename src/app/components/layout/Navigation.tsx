@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 
 export default function Navigation() {
-    const ICON_SIZE = 60;
+    const ICON_SIZE = '3vw';
     const pathname = usePathname();
     const [isDark, setIsDark] = useState(false);
 
@@ -39,18 +39,17 @@ export default function Navigation() {
     ];
 
     return (
-        <nav className="fixed left-0 top-0 h-full w-20 bg-[var(--muted)] flex flex-col items-center justify-between py-8">
-            <ul className="flex flex-col space-y-3">
+        <nav className="fixed left-0 top-0 h-full w-[var(--nav-width)] bg-[var(--muted)] flex flex-col items-center justify-between py-[clamp(1rem,2vh,2rem)]">
+            <ul className="flex flex-col">
                 {topNavItems.map(({ href, icon: Icon, label }) => (
                     <li key={href}>
                         <Link
                             href={href}
                             title={label}
-                            className={`flex items-center justify-center w-16 h-16 rounded transition-colors relative ${
-                                pathname === href
-                                    ? 'text-[var(--foreground)] border-l-4 border-[var(--primary)]'
+                            className={`flex items-center justify-center w-[5vw] h-[5vh] mb-[3vw] rounded transition-colors relative ${pathname === href
+                                    ? 'text-[var(--foreground)] border-l-2 border-[var(--primary)]'
                                     : 'text-[var(--secondary)] hover:text-[var(--accent)]'
-                            }`}
+                                }`}
                         >
                             <Icon size={ICON_SIZE} />
                         </Link>
