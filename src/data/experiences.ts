@@ -1,39 +1,50 @@
 export interface Experience {
     id: string;
     company: string;
+    link?: string;
     role: string;
     startDate: string;
     endDate: string;
     description: string | string[];
     tags: string[];
-    link?: string;
 }
 
 export const experiences: Experience[] = [
     {
-        id: '202410-1',
+        id: '202405-1',
+        company: 'PulteGroup',
+        link: 'https://www.pulte.com/',
         role: 'Software Engineer Intern',
-        company: 'Tech Solutions Inc.',
-        startDate: 'January 2022',
-        endDate: 'April 2022',
-        description: 'Developed internal tools using React and Node.js, improving team productivity by 15%. Collaborated with cross-functional teams to design and implement new features.',
-        tags: ['React', 'Node.js', 'TypeScript', 'Agile'],
-        link: 'https://www.techsolutions.com',
+        startDate: 'May 2024',
+        endDate: 'August 2024',
+        description: [
+            "Programmed updates to the Customer Portal application as part of an Agile multi-location development team.",
+            "Participated in full development lifecycle activities using mature, structured Agile processes."
+        ],
+        tags: [
+            "TypeScript", "Angular", "C#",
+            ".NET", "SQL", "Jest",
+            "Azure DevOps", "Git", "Python",
+            "Agile"
+        ]
     },
     {
-        id: '202410-2',
-        role: 'Software Engineer Intern',
-        company: 'Tech Solutions Inc.',
-        startDate: 'January 2022',
-        endDate: 'April 2022',
+        id: '202206-1',
+        company: 'Payverse',
+        link: 'https://payverse.com',
+        role: 'Technical Support',
+        startDate: 'June 2022',
+        endDate: 'August 2023',
         description: [
-            'Developed internal tools using React and Node.js, improving team productivity by 15%.',
-            'Collaborated with cross-functional teams to design and implement new features.',
-            'Wrote unit and integration tests to ensure code quality and reliability.',
-            'Participated in code reviews and contributed to team knowledge sharing sessions.'
+            "Designed, implemented, and maintained the company website using Webflow.",
+            "Directed and animated product videos, social media advertisements, and website graphics.",
         ],
-        tags: ['React', 'Node.js', 'TypeScript', 'Agile'],
-        link: 'https://www.techsolutions.com',
+        tags: [
+            "Webflow", "CSS", "JavaScript", 
+            "Adobe After Effects", "Adobe Premiere Pro", "Adobe Photoshop", 
+            "Adobe Illustrator", "LinkedIn Ads"
+        ],
+
     },
     
 ]
