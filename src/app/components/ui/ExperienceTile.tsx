@@ -30,7 +30,7 @@ export default function ExperienceTile({
                     <span>{' '}{experience.company}</span>
                 )}
             </h3>
-            <p className="text-[1.25vh] italic mb-2">{experience.startDate} {' - '} {experience.endDate}</p>
+            <p className="text-[1.5vh] text-[var(--secondary)] italic mb-2">{experience.startDate} {' - '} {experience.endDate}</p>
             {Array.isArray(experience.description) ? (
                 <ul className="list-disc list-inside text-[1.5vh] mb-3 ml-2">
                     {experience.description.map((item, index) => (

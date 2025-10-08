@@ -19,15 +19,15 @@ export default function Work() {
       <h1 className="text-[6.5vh]">
         Harrison Blair
       </h1>
-      <div className="grid grid-cols-[1fr_2fr] gap-4">
+      <div className="grid grid-cols-[1fr_2fr]">
         <div> {/* Sidebar - 1/3 of Screen */}
-          <div className="relative w-3/5 aspect-square m-4 mx-auto">
+          <div className="relative w-4/5 aspect-square m-2 mx-auto">
             <Image
               src="/images/Harrison-Blair.png"
               alt="Profile Picture"
               fill
               className="object-cover rounded-full border-[var(--primary)] border-4"
-            />
+            />  
           </div>
           <div className="flex flex-row gap-4 justify-center">
             <CircularButton
@@ -63,7 +63,7 @@ export default function Work() {
               size='8vh'
             />
           </div>
-          <div className="bg-[var(--muted)] rounded-[2.5rem] m-4 p-4 ">
+          <div className="bg-[var(--muted)] rounded-[2.5rem] m-2 p-4 ">
             <div className="flex flex-col p-4 gap-2">
               <h2 className="text-[3vh] text-[var(--primary)]">
                 Education
@@ -81,14 +81,14 @@ export default function Work() {
               </p>
             </div>
           </div>
-          <div className="bg-[var(--muted)] rounded-[2.5rem] m-4 p-4 ">
+          <div className="bg-[var(--muted)] rounded-[2.5rem] m-2 p-4 ">
             <div className="flex flex-col m-4 gap-2">
               <h2 className="text-[3vh] text-[var(--primary)]">
                 Skills
               </h2>
               <div className="flex flex-wrap gap-2">
                 {uniqueTags.map((tag, index) => (
-                  <Tag key={index} text={tag} styling='px-5 py-2 text-[1.6vh]' />
+                  <Tag key={index} text={tag} styling='px-3 py-2 text-[1.5vh]' />
                 ))}
               </div>
             </div>

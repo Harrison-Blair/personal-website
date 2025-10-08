@@ -41,8 +41,7 @@ export const experiences: Experience[] = [
         ],
         tags: [
             "Webflow", "CSS", "JavaScript", 
-            "Adobe After Effects", "Adobe Premiere Pro", "Adobe Photoshop", 
-            "Adobe Illustrator", "LinkedIn Ads"
+            "Adobe After Effects", "Adobe Premiere Pro",
         ]
     }
 ]
