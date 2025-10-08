@@ -30,7 +30,7 @@ export default function ProjectTile({
             className="object-cover rounded-2xl mb-4 border-[var(--primary)] border" 
           />
         ) : (
-          <div className="bg-[var(--secondary)] rounded-2xl flex items-center justify-center mb-4">
+          <div className="bg-[var(--secondary)] rounded-2xl flex items-center justify-center mb-4 w-[260px] h-[200px]">
             <Github size={48} className="text-[var(--foreground)]" />
           </div>
         )}
