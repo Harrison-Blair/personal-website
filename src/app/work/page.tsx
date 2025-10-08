@@ -23,7 +23,7 @@ export default function Work() {
         <div> {/* Sidebar - 1/3 of Screen */}
           <div className="relative w-3/5 aspect-square m-4 mx-auto">
             <Image
-              src="/images/Website-Homepage.png"
+              src="/images/Harrison-Blair.png"
               alt="Profile Picture"
               fill
               className="object-cover rounded-full border-[var(--primary)] border-4"
