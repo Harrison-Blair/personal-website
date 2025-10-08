@@ -1,5 +1,5 @@
 import { Experience } from "@/data/experiences";
-import { Link } from "lucide-react"
+import { Link } from "lucide-react";
 import SmallTag from "./Tag";
 
 export interface ExperienceTileProps {
