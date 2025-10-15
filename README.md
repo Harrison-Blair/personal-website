@@ -1,6 +1,9 @@
 Harrison Blair's Personal Website
-[![Build and Lint](https://github.com/Harrison-Blair/personal-website/actions/workflows/build-and-lint.yml/badge.svg?event=push)](https://github.com/Harrison-Blair/personal-website/actions/workflows/build-and-lint.yml)
 ============
+
+[![Build and Lint](https://github.com/Harrison-Blair/personal-website/actions/workflows/build-and-lint.yml/badge.svg?event=push)](https://github.com/Harrison-Blair/personal-website/actions/workflows/build-and-lint.yml)
+[![Deploy to Vercel](https://github.com/Harrison-Blair/personal-website/actions/workflows/main.yml/badge.svg)](https://github.com/Harrison-Blair/personal-website/actions/workflows/main.yml)
+
 This is the repository holding the code for Harrison Blair's personal website and developer portfolio. [You can do whatever you want with this code](/LICENSE).
 
 ### AI Tools Used
