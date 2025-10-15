@@ -154,6 +154,9 @@ export default function Contact() {
                 </div>
             </div>
             <div className="xl:hidden flex flex-col gap-4 items-center justify-center">
+                <h1 className="text-[6.5vh]">
+                    Contact
+                </h1>
                 <div className="bg-[var(--muted)] rounded-[5rem] p-8">
                     <p className="text-[2vh] text-center">
                         Let&apos;s get in touch! Whether you have a question, a project idea, or just want to say hi, I&apos;d love to hear from you. Fill out the form and I&apos;ll get back to you as soon as I can.
