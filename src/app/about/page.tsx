@@ -1,7 +1,14 @@
 import { Github } from "lucide-react";
 import CircularButton from "../components/ui/CircularButton";
+import ImageCarousel from "../components/ui/ImageCarousel";
 
 export default function About() {
+  const aboutGalleryImages: string[] = [
+    "/images/about-gallery/Harrison-Birthday.png",
+    "/images/about-gallery/Harrison-Graduation.png",
+    // Add more image URLs as needed
+  ];
+  
   return (
     <div className="grid grid-rows-[1fr_8fr] h-[90vh] w-[90vw]">
       <h1 className="text-[6.5vh]">
@@ -14,10 +21,12 @@ export default function About() {
               Ever since I was a kid, I have always been enamored with technology and how things work. I started doing graph coding in elementary school while a part of my school’s Lego Mindstorms Robotics club. I can still remember the first time I successfully solved a task on that year’s challenge board. That same feeling of accomplishment and pride still helps fuel me to finish projects and solve hard problems. Once reaching middle school I was introduced to python, and then my fate was truly sealed. Provided a computer, keyboard, monitor, and an internet connection it felt the only limits were my imagination and the time I was able to spend on a project. Since then I have let my passion run wild. In high school I led the programming team in our game development class. I created code standards, taught others to use git, and implemented features for the game. I originally went to college for the same, video game programming, however upon further consideration I decided to switch to a traditional B.S. in Computer Science.
             </p>
           </div>
-          <div className="relative w-[44%] bg-[var(--muted)] rounded-[5em] p-8">
-            
-          </div>
-          <div className="relative w-[22%] bg-[var(--muted)] rounded-[5em] p-8">
+          <ImageCarousel
+            imageUrls={aboutGalleryImages}
+            boarder="border-[var(--primary)] border-4"
+            styling="relative w-[44%] h-full rounded-[2rem]"
+          />
+          <div className="relative w-[22%] bg-[var(--muted)] rounded-[5rem] p-8">
             <p className="text-[0.75vw]">
               If I didn&apos;t become a software engineer, I would have become a cook. In fact, I still hold out hopes of going to culinary school and opening a restaurant of my own one day. I used to be very indifferent about what I ate, and preferred consistency over anything else in my diet. Then, on a trip to New York City with my mom we had dinner at a restaurant called Butter. I had the “Barbecued Boneless Beef Short Ribs” which blew my thirteen year old mind away. In the words of one of my childhood friends, I am on the never-ending hunt for “food that makes you emotional”.
             </p>
