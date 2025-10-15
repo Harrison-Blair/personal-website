@@ -10,7 +10,7 @@ export default function About() {
   ];
   
   return (
-    <div className="grid grid-rows-[1fr_8fr] h-[90vh] w-[90vw]">
+    <div className="hidden xl:grid grid-rows-[1fr_8fr] h-[90vh] w-[90vw]">
       <h1 className="text-[6.5vh]">
         Harrison Blair
       </h1>

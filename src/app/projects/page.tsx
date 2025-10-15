@@ -5,7 +5,7 @@ import { Github } from "lucide-react";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="hidden xl:block">
       <h1 className='text-[3.5vw]'>Projects</h1>
       <p className='text-[2vh] mb-4'>Here is a selection of my open source work.</p>
       <CircularButton

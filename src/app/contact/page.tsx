@@ -54,7 +54,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="grid grid-rows-[1fr_8fr] h-[90vh] w-[90vw] overflow-hidden">
+        <div className="hidden xl:grid grid-rows-[1fr_8fr] h-[90vh] w-[90vw] overflow-hidden">
             <h1 className="text-[6.5vh]">
                 Contact
             </h1>

@@ -15,7 +15,7 @@ export default function Work() {
   );
 
   return (
-    <div>
+    <div className="hidden xl:block">
       <h1 className="text-[3.5vw]">
         Harrison Blair
       </h1>

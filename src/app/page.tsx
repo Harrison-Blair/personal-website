@@ -5,7 +5,7 @@ import TypewriterText from './components/ui/TypewriterText';
 
 export default function Home() {
   return (
-    <div className="overflow-hidden w-[66%]">
+    <div className="hidden xl:block overflow-hidden">
       <div className="text-[6vh] mb-8"> {/* Welcome Message */}
         <h1>
           Hi 👋, <br />
@@ -22,7 +22,7 @@ export default function Home() {
           />
         </h1>
       </div>
-      <div className="grid grid-rows-3 gap-[25px]">
+      <div className="grid grid-rows-3 gap-[25px] w-[66%]">
         <div>
           <p className="text-[2vh] text-[var(--secondary)]">
             I love to build things that matter. I&apos;ve worked on teams from small VC-backed Startups to Fortune 500 companies, always learning and focused on creating value through thoughtful engineering. {' '}
