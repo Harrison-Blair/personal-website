@@ -19,7 +19,7 @@ export default function ImageCarousel({
 }: Readonly<ImageCarouselProps>) {
     const [currentIndex, setCurrentIndex] = useState(0);
     return (
-        <div className={`${styling} ${border} ${background}`}>
+        <div className={`${styling} ${border} ${background} overflow-hidden`}>
             <Image
                 src={imageUrls[currentIndex]}
                 alt={`Image ${currentIndex + 1}`}
