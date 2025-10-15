@@ -39,36 +39,41 @@ export default function Navigation() {
     ];
 
     return (
-        <nav className="fixed left-0 top-0 h-full w-[var(--nav-width)] bg-[var(--muted)] flex flex-col items-center justify-between py-[3vh]">
-            <ul className="flex flex-col">
-                {topNavItems.map(({ href, icon: Icon, label }) => (
-                    <li key={href}>
-                        <Link
-                            href={href}
-                            title={label}
-                            className={`flex items-center justify-center w-[5vw] h-[5vh] mb-[2vw] transition-colors relative ${pathname === href
-                                    ? 'text-[var(--foreground)] border-l-[0.33vw] border-[var(--primary)]'
-                                    : 'text-[var(--secondary)] hover:text-[var(--accent)]'
-                                }`}
-                        >
-                            <Icon size={ICON_SIZE} />
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-            <ul className="flex flex-col space-y-3">
-                {bottomNavItems.map(({ icon: Icon, label, onClick }) => (
-                    <li key={label}>
-                        <button
-                            onClick={onClick}
-                            title={label}
-                            className="flex items-center justify-center w-16 h-16 rounded transition-colors text-[var(--secondary)] hover:text-[var(--accent)]"
-                        >
-                            <Icon size={ICON_SIZE} />
-                        </button>
-                    </li>
-                ))}
-            </ul>
-        </nav>
+        <div>
+            <nav className="hidden xl:flex fixed left-0 top-0 h-full w-[var(--nav-width)] bg-[var(--muted)] flex-col items-center justify-between py-[3vh]">
+                <ul className="flex flex-col">
+                    {topNavItems.map(({ href, icon: Icon, label }) => (
+                        <li key={href}>
+                            <Link
+                                href={href}
+                                title={label}
+                                className={`flex items-center justify-center w-[5vw] h-[5vh] mb-[2vw] transition-colors relative ${pathname === href
+                                        ? 'text-[var(--foreground)] border-l-[0.33vw] border-[var(--primary)]'
+                                        : 'text-[var(--secondary)] hover:text-[var(--accent)]'
+                                    }`}
+                            >
+                                <Icon size={ICON_SIZE} />
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+                <ul className="flex flex-col space-y-3">
+                    {bottomNavItems.map(({ icon: Icon, label, onClick }) => (
+                        <li key={label}>
+                            <button
+                                onClick={onClick}
+                                title={label}
+                                className="flex items-center justify-center w-16 h-16 rounded transition-colors text-[var(--secondary)] hover:text-[var(--accent)]"
+                            >
+                                <Icon size={ICON_SIZE} />
+                            </button>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+            <nav className="xl:hidden flex-row fixed left-0 bottom-0 w-full h-[var(--nav-height)] bg-[var(--muted)] py-4 z-50">
+
+            </nav>
+        </div>
     );
 }
