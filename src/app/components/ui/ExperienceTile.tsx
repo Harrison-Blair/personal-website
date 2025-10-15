@@ -34,7 +34,7 @@ export default function ExperienceTile({
             {Array.isArray(experience.description) ? (
                 <ul className="list-disc list-inside text-[1.5vh] mb-3 ml-2">
                     {experience.description.map((item, index) => (
-                        <li key={index}>{item}</li>
+                        <li key={index} className="mb-4">{item}</li>
                     ))}
                 </ul>
             ) : (
