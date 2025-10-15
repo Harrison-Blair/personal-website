@@ -26,7 +26,7 @@ export default function ImageCarousel({
                 src={imageUrls[currentIndex]}
                 alt={`Image ${currentIndex + 1}`}
                 fill={true}
-                objectFit="contain"
+                style={{ objectFit: 'contain' }}
                 className={styling}
             />
             <ChevronLeft
