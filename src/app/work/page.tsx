@@ -56,7 +56,7 @@ export default function Work() {
                                 size='8vh'
                             />
                             <CircularButton
-                                href="/images/Website-Homepage.png"
+                                href="/documents/Harrison-Blair-Web-Resume.pdf"
                                 icon={FileDown}
                                 bgColor="bg-[var(--primary)]"
                                 hoverColor="hover:bg-[var(--accent)]"
@@ -165,7 +165,7 @@ export default function Work() {
                             size='8vh'
                         />
                         <CircularButton
-                            href="/images/Website-Homepage.png"
+                            href="/documents/Harrison-Blair-Web-Resume.pdf"
                             icon={FileDown}
                             bgColor="bg-[var(--primary)]"
                             hoverColor="hover:bg-[var(--accent)]"
