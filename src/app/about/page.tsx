@@ -23,7 +23,7 @@ export default function About() {
           </div>
           <ImageCarousel
             imageUrls={aboutGalleryImages}
-            boarder="border-[var(--primary)] border-4"
+            border="border-[var(--primary)] border-4"
             styling="relative w-[44%] h-full rounded-[2rem]"
           />
           <div className="relative w-[22%] bg-[var(--muted)] rounded-[5rem] p-8">

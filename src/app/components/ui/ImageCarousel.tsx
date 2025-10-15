@@ -6,14 +6,14 @@ import Image from "next/image";
 
 export interface ImageCarouselProps {
     imageUrls: string[];
-    boarder?: string;
+    border?: string;
     styling?: string;
     background?: string;
 }
 
 export default function ImageCarousel({
     imageUrls,
-    boarder = '',
+    border = '',
     styling = '',
     background = 'bg-slate-950',
 }: Readonly<ImageCarouselProps>) {
@@ -21,7 +21,7 @@ export default function ImageCarousel({
 
 
     return (
-        <div className={`${styling} ${boarder} ${background}`}>
+        <div className={`${styling} ${border} ${background}`}>
             <Image
                 src={imageUrls[currentIndex]}
                 alt={`Image ${currentIndex + 1}`}
