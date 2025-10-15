@@ -21,7 +21,7 @@ export default function CircularButton({
   size = '6vh',
 }: CircularButtonProps) {
   const buttonClasses = `${bgColor} ${hoverColor} rounded-full flex items-center justify-center text-white transition-colors duration-200`;
-  const iconSize = parseInt(size) - 2;
+  const iconSize = parseInt(size) * 0.6;
 
   if (isExternal) {
     return (
