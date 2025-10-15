@@ -81,6 +81,9 @@ export default function Home() {
               />
             </h1>
             <div className="flex flex-col items-center justify-end gap-4 mt-auto">
+              <p className='italic text-center text-[var(--accent)] mb-4'>
+                For the best experience, please view this site on a larger screen!
+              </p>
               <div className='flex gap-5 mb-6'>
                 <CircularButton
                   href="https://github.com/Harrison-Blair"
