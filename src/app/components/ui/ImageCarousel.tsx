@@ -18,8 +18,6 @@ export default function ImageCarousel({
     background = 'bg-slate-950',
 }: Readonly<ImageCarouselProps>) {
     const [currentIndex, setCurrentIndex] = useState(0);
-
-
     return (
         <div className={`${styling} ${border} ${background}`}>
             <Image
