@@ -73,7 +73,7 @@ export default function Navigation() {
                 </ul>
             </nav>
             <div className="xl:hidden h-full">
-                <button className="fixed top-4 right-4 bg-[var(--muted)] p-3 rounded-full" onClick={toggleTheme}>
+                <button className="fixed top-4 right-4 bg-[var(--muted)] p-3 rounded-full border-4 border-[var(--primary)]" onClick={toggleTheme}>
                     {isDark ? <MoonStar size={MOBILE_ICON_SIZE} /> : <Sun size={MOBILE_ICON_SIZE} />}
                 </button>
                 <nav className="flex-row fixed left-0 bottom-0 w-full h-[var(--nav-height)] bg-[var(--muted)] py-5 z-50">
