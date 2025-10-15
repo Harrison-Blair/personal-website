@@ -49,8 +49,8 @@ export default function Navigation() {
                                 href={href}
                                 title={label}
                                 className={`flex items-center justify-center w-[5vw] h-[5vh] mb-[2vw] transition-colors relative ${pathname === href
-                                        ? 'text-[var(--foreground)] border-l-[0.33vw] border-[var(--primary)]'
-                                        : 'text-[var(--secondary)] hover:text-[var(--accent)]'
+                                    ? 'text-[var(--foreground)] border-l-[0.33vw] border-[var(--primary)]'
+                                    : 'text-[var(--secondary)] hover:text-[var(--accent)]'
                                     }`}
                             >
                                 <Icon size={ICON_SIZE} />
@@ -73,26 +73,26 @@ export default function Navigation() {
                 </ul>
             </nav>
             <div className="xl:hidden h-full">
-                <button className="fixed bottom-24 right-4 bg-[var(--muted)] p-3 rounded-full border-4 border-[var(--primary)]" onClick={toggleTheme}>
-                    {isDark ? <MoonStar size={MOBILE_ICON_SIZE} /> : <Sun size={MOBILE_ICON_SIZE} />}
-                </button>
                 <nav className="flex-row fixed left-0 bottom-0 w-full h-[var(--nav-height)] bg-[var(--muted)] py-5 z-50">
                     <ul className="flex flex-row justify-around">
-                    {topNavItems.map(({ href, icon: Icon, label }) => (
-                        <li key={href}>
-                            <Link
-                                href={href}
-                                title={label}
-                                className={`flex items-center justify-center mb-[2vw] transition-colors relative ${pathname === href
+                        {topNavItems.map(({ href, icon: Icon, label }) => (
+                            <li key={href}>
+                                <Link
+                                    href={href}
+                                    title={label}
+                                    className={`flex items-center justify-center mb-[2vw] transition-colors relative ${pathname === href
                                         ? 'text-[var(--foreground)] border-b-[0.5vh] border-[var(--primary)]'
                                         : 'text-[var(--secondary)] hover:text-[var(--accent)]'
-                                    }`}
-                            >
-                                <Icon size={MOBILE_ICON_SIZE} />
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+                                        }`}
+                                >
+                                    <Icon size={MOBILE_ICON_SIZE} />
+                                </Link>
+                            </li>
+                        ))}
+                        <button className="mb-[4vw]" onClick={toggleTheme}>
+                            {isDark ? <MoonStar size={MOBILE_ICON_SIZE} /> : <Sun size={MOBILE_ICON_SIZE} />}
+                        </button>
+                    </ul>
                 </nav>
             </div>
         </div>
