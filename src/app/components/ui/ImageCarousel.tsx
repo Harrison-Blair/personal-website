@@ -27,7 +27,6 @@ export default function ImageCarousel({
                 alt={`Image ${currentIndex + 1}`}
                 fill={true}
                 style={{ objectFit: 'contain' }}
-                className={styling}
             />
             <ChevronLeft
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer hover:text-[var(--accent)] p-2 transition-all duration-200"
