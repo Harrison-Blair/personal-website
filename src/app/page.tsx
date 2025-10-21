@@ -15,6 +15,7 @@ export default function Home() {
     "an Avid Reader",
     "aspiring Architect",
   ];
+  
   return (
     <div>
       <div className="hidden xl:block overflow-hidden">
