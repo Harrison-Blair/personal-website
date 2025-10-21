@@ -1,6 +1,6 @@
 name: Chore Item
 description: Anything clerical or not quite a feature
-title: "Chore | [DESCRIPTION]"
+title: "CHORE | [DESCRIPTION]"
 labels: ["chore"]
 assignees:
   - Harrison-Blair

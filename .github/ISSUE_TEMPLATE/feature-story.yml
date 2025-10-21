@@ -1,6 +1,6 @@
 name: Feature Story
 description: Add or modify Functionality/Appearance
-title: "Feature | [DESCRIPTION]"
+title: "FEATURE | [DESCRIPTION]"
 labels: ["feature"]
 assignees:
   - Harrison-Blair

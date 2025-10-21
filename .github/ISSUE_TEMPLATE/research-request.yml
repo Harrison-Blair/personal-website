@@ -1,6 +1,6 @@
 name: Research Request
 description: A Request to look into something
-title: "Research | [Description]"
+title: "RESEARCH | [Description]"
 labels: ["request"]
 body:
   - type: markdown

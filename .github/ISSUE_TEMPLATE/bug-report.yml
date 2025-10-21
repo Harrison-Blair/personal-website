@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report an issue or unintended functionality
-title: "Bug | [Description]"
+title: "BUG | [Description]"
 labels: ["bug"]
 assignees:
   - Harrison-Blair
