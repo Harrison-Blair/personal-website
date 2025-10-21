@@ -21,7 +21,7 @@ export default function Home() {
       <h1 className='text-center h-[25rem] 
                     lg:text-left lg:h-auto'>
         Hi 👋, <br />
-        I'm Harrison, <br />
+        I&apos;m Harrison, <br />
         <TypewriterText
           text={roles}
           styling='text-[var(--primary)]'
