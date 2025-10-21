@@ -9,8 +9,7 @@
   --primary: #2563eb;
   --secondary: #6c757d;
   --accent: #0ea5e9;
-  --nav-width: 5vw;
-  --nav-height: 9vh;
+  --nav-size: 5rem;
 }
 
 .dark {
@@ -26,10 +25,6 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-proto-mono);
-}
-
-* {
-  transition: all 0.3s ease;
 }
 
 @layer utilities {
