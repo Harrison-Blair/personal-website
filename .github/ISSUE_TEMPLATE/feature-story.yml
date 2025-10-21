@@ -1,0 +1,124 @@
+name: Feature Story
+description: Add or modify Functionality/Appearance
+title: "FEATURE | [DESCRIPTION]"
+labels: ["feature"]
+assignees:
+  - Harrison-Blair
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## New Feature Request
+        Please describe the feature you'd like to add or modify.
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: Describe WHAT is being added or changed
+      placeholder: A clear description of the feature...
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: story-points
+    attributes:
+      label: Story Points
+      description: How complex do you think this fix will be?
+      options:
+        - Unknown
+        - 0 (Trivial)
+        - 1 (Quick fix)
+        - 2 (Few hours)
+        - 3 (Half day)
+        - 5 (Full day)
+        - 8 (Multi-day)
+        - 13 (Should it really be this big?)
+    validations:
+      required: true
+  
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story (Optional)
+      description: Frame this as a user story if applicable
+      placeholder: |
+        As a [type of user]
+        I want [goal/desire]
+        So that [benefit/value]
+  
+  - type: textarea
+    id: functional-requirements
+    attributes:
+      label: Functional Requirements
+      description: What needs to functionally happen for this feature to be implemented?
+      placeholder: |
+        1. Fun Req
+            a. SubFun Req
+        2. Second Fun Req
+      value: |
+        1. 
+    validations:
+      required: true
+  
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: From the perspective of all involved Stakeholders, what makes this item "completed"?
+      placeholder: |
+        1. Acceptance Criteria
+            a. Sub Acceptance Criteria
+        2. Other Criteria
+      value: |
+        1. 
+    validations:
+      required: true
+  
+  - type: textarea
+    id: non-functional
+    attributes:
+      label: Non-Functional Requirements (Optional)
+      description: Performance, security, accessibility considerations
+      placeholder: |
+        - Performance: Should load in < 2s
+        - Security: Must use encrypted connection
+        - Accessibility: WCAG AA compliant
+  
+  - type: textarea
+    id: design-assets
+    attributes:
+      label: Design Assets / Mockups (Optional)
+      description: Add links to designs, wireframes, or drag-and-drop images
+      placeholder: Figma links, screenshots, etc.
+  
+  - type: textarea
+    id: related-items
+    attributes:
+      label: Related Work Items
+      placeholder: "#123, #456"
+  
+  - type: input
+    id: wiki
+    attributes:
+      label: Wiki Reference
+      placeholder: "https://..."
+  
+  - type: input
+    id: useful-links
+    attributes:
+      label: Useful Links
+      placeholder: "https://..."

@@ -1,0 +1,144 @@
+name: Research Request
+description: A Request to look into something
+title: "RESEARCH | [Description]"
+labels: ["request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Research Request
+        Use this template to request investigation into a topic, technology, or problem space.
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs to be looked into?
+      description: Describe the topic or area that requires research
+      placeholder: A clear description of what needs investigation...
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this research request?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: story-points
+    attributes:
+      label: Story Points
+      description: How complex do you think this fix will be?
+      options:
+        - Unknown
+        - 0 (Trivial)
+        - 1 (Quick fix)
+        - 2 (Few hours)
+        - 3 (Half day)
+        - 5 (Full day)
+        - 8 (Multi-day)
+        - 13 (Should it really be this big?)
+    validations:
+      required: true
+  
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification
+      description: Why does this research need to be done?
+      placeholder: Explain the business value, technical need, or problem this research will address...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: research-questions
+    attributes:
+      label: Research Questions
+      description: What specific questions need to be answered?
+      placeholder: |
+        1. Question 1
+        2. Question 2
+        3. Question 3
+      value: |
+        1. 
+  
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope & Boundaries
+      description: What is in scope and out of scope for this research?
+      placeholder: |
+        **In Scope:**
+        - 
+        
+        **Out of Scope:**
+        - 
+  
+  - type: dropdown
+    id: deliverable-type
+    attributes:
+      label: Expected Deliverable Type
+      description: What should be the output of this research?
+      options:
+        - Written Report
+        - Proof of Concept (POC)
+        - Recommendation Document
+        - Presentation/Slides
+        - Technical Spike
+        - Comparison Matrix
+        - Other
+    validations:
+      required: false
+  
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria / Definition of Done
+      description: What makes this research complete?
+      placeholder: |
+        - [ ] All research questions answered
+        - [ ] Deliverable created and reviewed
+        - [ ] Recommendations documented
+        - [ ] Stakeholders informed
+  
+  - type: input
+    id: stakeholders
+    attributes:
+      label: Stakeholders / Audience
+      description: Who needs the results of this research?
+      placeholder: "@username, team name, etc."
+  
+  - type: input
+    id: deadline
+    attributes:
+      label: Target Completion Date (Optional)
+      description: When is this research needed by?
+      placeholder: "YYYY-MM-DD or milestone name"
+  
+  - type: textarea
+    id: related-items
+    attributes:
+      label: Related Work Items
+      description: Link to related issues or PRs
+      placeholder: "#123, #456"
+  
+  - type: input
+    id: wiki
+    attributes:
+      label: Wiki Reference
+      description: Link to relevant wiki documentation
+      placeholder: "https://..."
+  
+  - type: input
+    id: useful-links
+    attributes:
+      label: Useful Links
+      description: Any resources that might help with this research
+      placeholder: "https://..."

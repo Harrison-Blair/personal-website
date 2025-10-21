@@ -1,0 +1,78 @@
+name: Chore Item
+description: Anything clerical or not quite a feature
+title: "CHORE | [DESCRIPTION]"
+labels: ["chore"]
+assignees:
+  - Harrison-Blair
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs to be done?
+      description: Describe the chore
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: chore-type
+    attributes:
+      label: Chore Type
+      options:
+        - Refactoring
+        - Configuration
+        - Continuous Integration
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this chore?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: story-points
+    attributes:
+      label: Story Points
+      description: How complex do you think this fix will be?
+      options:
+        - Unknown
+        - 0 (Trivial)
+        - 1 (Quick fix)
+        - 2 (Few hours)
+        - 3 (Half day)
+        - 5 (Full day)
+        - 8 (Multi-day)
+        - 13 (Should it really be this big?)
+    validations:
+      required: true
+  
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification
+      description: Why does this need to be done?
+    validations:
+      required: true
+  
+  - type: textarea
+    id: done-criteria
+    attributes:
+      label: Definition of Done
+      description: What needs to be done?
+      placeholder: |
+        - Code changes complete
+        - Tests added/updated
+        - Documentation updated
+        - Reviewed and approved
+  
+  - type: textarea
+    id: related-items
+    attributes:
+      label: Related Work Items
+      placeholder: "#123, #456"

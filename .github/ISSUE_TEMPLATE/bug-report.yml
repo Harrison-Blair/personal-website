@@ -1,0 +1,121 @@
+name: Bug Report
+description: Report an issue or unintended functionality
+title: "BUG | [Description]"
+labels: ["bug"]
+assignees:
+  - Harrison-Blair
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this bug!
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Describe what erroneous functionality is taking place
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this bug?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: story-points
+    attributes:
+      label: Story Points
+      description: How complex do you think this fix will be?
+      options:
+        - Unknown
+        - 0 (Trivial)
+        - 1 (Quick fix)
+        - 2 (Few hours)
+        - 3 (Half day)
+        - 5 (Full day)
+        - 8 (Multi-day)
+        - 13 (Should it really be this big?)
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: interface
+    attributes:
+      label: UI / Interface
+      description: What type of UI?
+      options:
+        - Command Line
+        - Desktop App (GUI)
+    validations:
+      required: true
+  
+  - type: input
+    id: other-info
+    attributes:
+      label: Other Information
+      description: Any other relevant technical details
+      placeholder: "OS version, screen size, etc."
+  
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: Clear steps to reproduce the bug
+      placeholder: |
+        1. Step 1
+        2. Step 2
+        3. Step 3
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+  
+  - type: textarea
+    id: intended
+    attributes:
+      label: Intended Functionality
+      description: Describe what SHOULD be happening instead
+      placeholder: What did you expect to happen?
+    validations:
+      required: true
+  
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Error Logs
+      description: Add any screenshots, error messages, or console output
+      placeholder: Drag and drop images here or paste error logs
+  
+  - type: textarea
+    id: related-items
+    attributes:
+      label: Related Work Items
+      description: Link to related issues or PRs
+      placeholder: "#123, #456"
+  
+  - type: input
+    id: wiki
+    attributes:
+      label: Wiki Reference
+      description: Link to relevant wiki documentation
+      placeholder: "https://..."
+  
+  - type: input
+    id: useful-links
+    attributes:
+      label: Useful Links
+      description: Any other helpful resources
+      placeholder: "https://..."
