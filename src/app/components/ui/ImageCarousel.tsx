@@ -24,16 +24,16 @@ export default function ImageCarousel({
                 src={imageUrls[currentIndex]}
                 alt={`Image ${currentIndex + 1}`}
                 fill={true}
-                style={{ objectFit: 'contain' }}
+                className='object-contain'
             />
             <ChevronLeft
                 className="absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer hover:text-[var(--accent)] p-2 transition-all duration-200"
-                size={'6vh'}
+                size={'5rem'}
                 onClick={() => setCurrentIndex((currentIndex - 1 + imageUrls.length) % imageUrls.length)}
             />
             <ChevronRight
                 className="absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer hover:text-[var(--accent)] p-2 transition-all duration-200"
-                size={'6vh'}
+                size={'5rem'}
                 onClick={() => setCurrentIndex((currentIndex + 1) % imageUrls.length)}
             />
         </div>
