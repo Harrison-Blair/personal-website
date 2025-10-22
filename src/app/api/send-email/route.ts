@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
 
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev', // Replace with your domain in production
-      to: process.env.RESEND_DESTINATION_EMAIL!,
+      to: process.env.NEXT_PUBLIC_RESEND_DESTINATION_EMAIL!,
       subject: `${escapedName} : ${escapedSubject}`,
       html: `
         <h2>New Contact Form Submission</h2>
