@@ -7,52 +7,59 @@ import SmallTag from './Tag';
 export interface ProjectTileProps {
   project: Project;
   styling?: string;
+  imageStyling?: string;
+  imageSize?: [number, number];
+  titleStyling?: string;
+  descriptionStyling?: string;
   height?: string;
+  width?: string;
 }
 
-export default function ProjectTile({ 
+export default function ProjectTile({
   project,
   styling = '',
-  height = '45vh',
- }: ProjectTileProps) {
-  const titleFontSize = `calc(${height} * 0.04)`;
-  const descFontSize = `calc(${height} * 0.03)`;
-  const imageHeight = `calc(${height} * 0.4)`;
-  const imageWidth = `calc(${height} * 0.5)`;
+  imageStyling = '',
+  imageSize = [285, 285],
+  titleStyling = '',
+  descriptionStyling = '',
+  height = 'h-[30rem]',
+  width = 'w-[20rem]',
+}: ProjectTileProps) {
+  const imageStyle = `border border-[0.25rem] border-[var(--primary)] rounded-2xl mb-4 object-cover ${imageStyling}`;
 
   return (
-    <a 
-      href={project.link} 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className={`w-[50%] bg-[var(--muted)] rounded-3xl block hover:bg-[var(--accent)] transition-colors cursor-pointer ${styling}`}
-      style={{ height }}
+    <a
+      href={project.link}
+      target='_blank'
+      rel="noopener noreferrer"
+      className={`flex flex-col ${height} ${width} bg-[var(--muted)] hover:bg-[var(--accent)] rounded-3xl transition-colors p-4 ${styling}`}
     >
-      <div className='p-4 flex flex-col h-full items-center text-center'>
+      <div>
         {project.imageUrl ? (
-          <Image 
-            src={project.imageUrl} 
-            alt={project.title || 'Project image'} 
-            width={260}
-            height={200}
-            className="object-cover rounded-2xl mb-4 border-[var(--primary)] border" 
-            style={{ height: imageHeight, width: imageWidth }}
+          <Image
+            src={project.imageUrl}
+            alt={project.title || 'Project image'}
+            width={imageSize[0]}
+            height={imageSize[1]}
+            className={imageStyle}
           />
         ) : (
-          <div className="bg-[var(--secondary)] rounded-2xl flex items-center justify-center mb-4" style={{ height: imageHeight, width: imageWidth }}>
-            <Github size={48} className="text-[var(--foreground)]" />
+          <div className={`${imageStyle}`}>
+            <Github />
           </div>
         )}
-        <div>
-          <h3 className='font-semibold mb-2' style={{ fontSize: titleFontSize }}>{project.title}</h3>
-          <hr className='w-full border-t border-[var(--secondary)] mb-2' />
-          <p className='mb-4' style={{ fontSize: descFontSize }}>{project.description}</p>
-        </div>
-        <div className='flex flex-wrap gap-1.5 justify-center'>
-          {project.tags?.map((tag, index) => (
-            <SmallTag key={index} text={tag} />
-          ))}
-        </div>
+      </div>
+      <p className={`text-[1.25rem] text-center font-bold mb-2 ${titleStyling}`}>
+        {project.title}
+      </p>
+      <hr className='border-[var(--secondary)]' />
+      <p className={`mt-2 text-center flex-grow ${descriptionStyling}`}>
+        {project.description}
+      </p>
+      <div className='flex flex-wrap gap-1.5 justify-center'>
+        {project.tags?.map((tag, index) => (
+          <SmallTag key={index} text={tag} />
+        ))}
       </div>
     </a>
   );
