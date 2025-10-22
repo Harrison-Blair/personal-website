@@ -33,8 +33,8 @@ export default function Projects() {
         <h2>
           Pinned Projects
         </h2>
-        <div className='flex flex-col items-center gap-4 mb-4
-                      lg:flex-col-3 lg:items-start'>
+        <div className='grid grid-cols-1 gap-4 mb-4
+                      lg:grid-cols-3'>
           {projects.filter(project => project.pinned).map((project) => (
             <ProjectTile key={project.id} project={project} />
           ))}
@@ -42,8 +42,8 @@ export default function Projects() {
         <h2>
           All Projects
         </h2>
-        <div className='flex flex-col items-center gap-4 mb-4
-                      lg:flex-col-3 lg:items-start'>
+        <div className='grid grid-cols-1 gap-4 mb-4
+                      lg:grid-cols-3'>
           {projects.map((project) => (
             <ProjectTile key={project.id} project={project} />
           ))}

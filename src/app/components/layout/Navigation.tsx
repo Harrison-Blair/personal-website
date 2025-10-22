@@ -63,7 +63,7 @@ export default function Navigation() {
                             <button
                                 onClick={onClick}
                                 title={label}
-                                className='text-[var(--foreground)] lg:'
+                                className='text-[var(--foreground)]'
                             >
                                 <Icon size={ICON_SIZE} />
                             </button>

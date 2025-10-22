@@ -118,7 +118,7 @@ export default function Contact() {
             value={formData.message}
             onChange={handleChange}
             required
-            className={`${inputStyle} h-96 `}
+            className={`${inputStyle} h-96`}
           />
           <div className="flex justify-center mt-4">
             <button

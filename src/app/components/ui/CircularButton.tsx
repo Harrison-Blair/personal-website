@@ -3,7 +3,7 @@ import { LucideIcon } from 'lucide-react';
 
 interface CircularButtonProps {
   href: string;
-  icon: LucideIcon
+  icon: LucideIcon;
   bgColor: string;
   textColor?: string;
   hoverColor: string;
@@ -23,7 +23,7 @@ export default function CircularButton({
   isDownload = false,
 }: CircularButtonProps) {
   const buttonClasses = `flex ${bgColor} ${hoverColor} ${textColor} rounded-full items-center justify-center transition-colors duration-200`;
-  const iconSize = String(parseInt(size) * 0.6) + 'rem'
+  const iconSize = String(parseInt(size) * 0.6) + 'rem';
 
   if (isExternal) {
     return (
