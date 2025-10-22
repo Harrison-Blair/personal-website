@@ -37,7 +37,7 @@ export default function RectangularButton({
                 style={{ width, height }}
             >
                 {Icon && <Icon size={iconSize} />}
-                <p>{' ⋅ '}</p>
+                <span>{' ⋅ '}</span>
                 {text}
             </a>
         );
