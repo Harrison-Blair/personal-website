@@ -77,7 +77,7 @@ export default function Work() {
               Champlain College - Burlington, VT
             </a>
             <p className="text-[1.1rem] mt-2">
-              Bachelors of Science in Computer Science, <br />
+              Bachelor&apos;s of Science in Computer Science, <br />
               Minor in Cybersecurity
             </p>
           </div>
