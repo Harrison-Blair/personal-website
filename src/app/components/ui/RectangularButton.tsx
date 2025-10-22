@@ -22,10 +22,10 @@ export default function RectangularButton({
     hoverColor,
     styling = '',
     isExternal = false,
-    width = '',
-    height = '6vh',
+    width = '75%',
+    height = '3rem',
 }: RectangularButtonProps) {
-    const iconSize = parseFloat(height) - 2;
+    const iconSize = String(parseInt(height) * 0.75) + 'rem';
 
     if (isExternal) {
         return (
@@ -33,11 +33,11 @@ export default function RectangularButton({
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex justify-center items-center rounded-lg ${styling} ${bgColor} ${hoverColor}`}
+                className={`flex justify-center items-center rounded-lg gap-4 ${styling} ${bgColor} ${hoverColor}`}
                 style={{ width, height }}
             >
-                {Icon && <Icon className="mr-3" size={iconSize + 'vh'} />}
-                {' ⋅ '}
+                {Icon && <Icon size={iconSize} />}
+                <p>{' ⋅ '}</p>
                 {text}
             </a>
         );
@@ -45,7 +45,7 @@ export default function RectangularButton({
 
     return (
         <Link href={href} className={`flex justify-between items-center rounded-lg ${styling} ${bgColor} ${hoverColor}`} style={{ width, height }}>
-            {Icon && <Icon className="mr-3" size={iconSize + 'vh'}/>}
+            {Icon && <Icon size={iconSize}/>}
             {' ⋅ '}
             {text}
         </Link>
