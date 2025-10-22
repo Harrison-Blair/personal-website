@@ -45,7 +45,7 @@ export default function ProjectTile({
           />
         ) : (
           <div className={`${imageStyle}`}>
-            <Github />
+            <Github width={imageSize[0] * 0.75} height={imageSize[1] * 0.75} className={imageStyle}/>
           </div>
         )}
       </div>
