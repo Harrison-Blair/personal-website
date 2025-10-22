@@ -43,7 +43,7 @@ export default function Projects() {
       <div className='flex flex-col items-center gap-4 mb-4
                       lg:flex-col-3 lg:items-start'>
           {projects.map((project) => (
-            <ProjectTile key={project.id} project={project} styling="w-[66vw]"/>
+            <ProjectTile key={project.id} project={project}/>
           ))}
         </div>
     </div>
