@@ -3,7 +3,6 @@ import { Github } from "lucide-react";
 
 import { Project } from "../../../data/projects";
 import SmallTag from './Tag';
-import { getImageSize } from 'next/dist/server/image-optimizer';
 
 export interface ProjectTileProps {
   project: Project;
