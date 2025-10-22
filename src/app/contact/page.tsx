@@ -63,7 +63,7 @@ export default function Contact() {
                       lg:grid-cols-[1fr_2fr]'>
         <div>
           <p className="bg-[var(--muted)] rounded-3xl text-center p-4 mb-4 text-[1.25rem]">
-            Let's get in touch! Whether you have a question, a project idea, or just want to say hi, I'd love to hear from you. Fill out the form and I'll get back to you as soon as I can.
+            Let&apos;s get in touch! Whether you have a question, a project idea, or just want to say hi, I&apos;d love to hear from you. Fill out the form and I&apos;ll get back to you as soon as I can.
           </p>
           <div className='flex flex-col items-center justify-center gap-4'>
             <RectangularButton
