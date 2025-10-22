@@ -94,7 +94,7 @@ export default function Work() {
                         lg:text-start'>
           <p className='bg-[var(--muted)] rounded-3xl p-4 mb-4
                         lg:text-[1.2rem]'>
-            Hi, my name is Harrison. I recently graduated from Champlain College with a B.S. in Computer Science and minor in Cybersecurity. Over the past few years I&apos;ve built strong full stack software development skills, using languages like Python, Typescript, C++, and Rust. I am experienced working in agile software development teams, implementing continuous integration/continuous delivery pipelines, modern cloud-based architecture and remote development teams. I love solving complex problems with code, no matter the domain.
+            I recently graduated from Champlain College with a B.S. in Computer Science and minor in Cybersecurity. Over the past few years I&apos;ve built strong full stack software development skills, using languages like Python, Typescript, C++, and Rust. I am experienced working in agile software development teams, implementing continuous integration/continuous delivery pipelines, modern cloud-based architecture and remote development teams. I love solving complex problems with code, no matter the domain.
           </p>
           <h2 className="m-4">
             Work Experience
