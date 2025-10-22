@@ -22,7 +22,7 @@ export default function Work() {
       <div className='grid grid-cols-1 gap-4
                       lg:grid-cols-[1fr_2fr]'>
         <div className='flex flex-col items-center'>
-          <div className='relative w-2/3 aspect-square mb-4'>
+          <div className='relative w-2/3 aspect-square mb-2'>
             <Image
               src="/images/Harrison-Blair.png"
               alt="Profile Picture"
@@ -30,6 +30,9 @@ export default function Work() {
               className="object-cover rounded-full border-[var(--primary)] border-4"
             />
           </div>
+          <h2 className='text-[var(--foreground)]'>
+            Harrison Blair
+          </h2>
           <div className="flex justify-center space-x-4
                               lg:justify-start">
             <CircularButton
