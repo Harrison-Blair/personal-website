@@ -26,8 +26,7 @@ export const experiences: Experience[] = [
         tags: [
             "TypeScript", "Angular", "C#",
             ".NET", "SQL", "Jest",
-            "Azure DevOps", "Git", "Python",
-            "Agile"
+            "Azure DevOps", "Git", "Agile"
         ]
     },
     {
