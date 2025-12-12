@@ -18,5 +18,12 @@ export const projects: Project[] = [
     imageUrl: '/images/Website-Homepage.png',
     pinned: true,
   },
+  {
+    id: '202505-1',
+    title: 'MusiSync',
+    description: 'A peer-to-peer music library syncing application. My senior-year Capstone project.',
+    link: 'https://github.com/abbi-gehl/MusiSyncCapstone',
+    tags: ['React Native', 'P2P Networking', 'TypeScript'],
+  }
   // Add more projects here
 ];

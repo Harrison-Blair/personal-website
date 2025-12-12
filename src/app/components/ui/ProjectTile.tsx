@@ -44,8 +44,8 @@ export default function ProjectTile({
             className={imageStyle}
           />
         ) : (
-          <div className={`${imageStyle}`}>
-            <Github width={imageSize[0] * 0.75} height={imageSize[1] * 0.75} className={imageStyle}/>
+          <div className={`flex items-center justify-center ${imageStyle}`}>
+            <Github width={imageSize[0] * 0.75} height={imageSize[1] * 0.775} />
           </div>
         )}
       </div>
