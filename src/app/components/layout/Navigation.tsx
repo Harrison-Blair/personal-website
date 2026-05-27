@@ -14,6 +14,7 @@ export default function Navigation() {
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const hasDarkClass = document.documentElement.classList.contains('dark');
         const shouldBeDark = hasDarkClass || prefersDark;
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time client sync of theme state read from window.matchMedia + document class
         setIsDark(shouldBeDark);
         document.body.style.transition = 'color 0.3s ease, background-color 0.3s ease';
         document.documentElement.classList.toggle('dark', shouldBeDark);
