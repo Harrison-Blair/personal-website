@@ -11,6 +11,27 @@ export interface Experience {
 
 export const experiences: Experience[] = [
     {
+        id: '202601-1',
+        company: 'Arcum',
+        link: 'https://arcum.ai',
+        role: 'Software Engineer',
+        startDate: 'January 2026',
+        endDate: 'Present',
+        description: [
+            "Built event-driven Python ML pipeline scoring 126,990 merchants/month across 12 client portfolios over 400 engineered features (300 dynamically computed), delivering 2.38x lift and 22.5% top-decile precision on churn predictions",
+            "Developed internal MLOps console enabling self-serve pipeline orchestration (kickoff, step-level reruns, version management), data operations (upload, validation, cross-environment migration), and LLM prompt configuration driving AI-generated churn reasoning and retention email generation",
+            "Architected and implemented client-facing tool-calling AI agent on Anthropic SDK with OpenAI/Gemini fallbacks, enabling clients to query metrics, plot time-series data, generate retention/winback strategies, and trigger automated campaigns through the in-platform campaign manager",
+            "Designed and implemented JWT scope-based access control and permission middleware across the frontend and AI chatbot tools, enforcing tenant isolation of sensitive client data",
+            "Shipped industry-benchmarking dashboards and the AI agent client interface in the Next.js application (Pages Router, MongoDB, Vercel), serving 120+ users"
+        ],
+        tags: [
+            "Python", "TypeScript", "Next.js",
+            "React", "MongoDB", "Vercel",
+            "Anthropic SDK", "OpenAI", "Gemini",
+            "AWS", "Machine Learning", "MLOps", "JWT"
+        ]
+    },
+    {
         id: '202405-1',
         company: 'PulteGroup',
         link: 'https://www.pulte.com/',
