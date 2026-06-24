@@ -18,10 +18,9 @@ export default function Projects() {
       </h1>
       <div className='flex flex-col justify-center items-center
                       lg:items-start'>
-        <p className='bg-[var(--muted)] rounded-3xl text-center p-4 mb-4
-                    lg:bg-inherit lg:text-left lg:text-[20px] lg:w-[66%] lg:p-0'>
+        <p className='prose-card'>
           Here is a selection of some of my open source work. If you&apos;re looking for my professional experience, {' '}
-          <Link href="/work" className="underline text-[var(--primary)] hover:text-[var(--accent)]">
+          <Link href="/work" className="link-accent">
             you can find that here
           </Link>
           . If you&apos;re interested in seeing more of my open source work, check out my GitHub page.
@@ -31,8 +30,6 @@ export default function Projects() {
           <CircularButton
             href="https://github.com/Harrison-Blair"
             icon={Github}
-            bgColor="bg-[var(--primary)]"
-            hoverColor="hover:bg-[var(--accent)]"
             isExternal={true}
           />
         </div>

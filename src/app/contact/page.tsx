@@ -62,7 +62,7 @@ export default function Contact() {
       <div className='grid grid-cols-1 gap-4
                       lg:grid-cols-[1fr_2fr]'>
         <div>
-          <p className="bg-[var(--muted)] rounded-3xl text-center p-4 mb-4 text-[1.25rem]">
+          <p className="card text-center mb-4 text-[1.25rem]">
             Let&apos;s get in touch! Whether you have a question, a project idea, or just want to say hi, I&apos;d love to hear from you. Fill out the form and I&apos;ll get back to you as soon as I can.
           </p>
           <div className='flex flex-col items-center justify-center gap-4'>
@@ -70,21 +70,17 @@ export default function Contact() {
               href="https://www.linkedin.com/in/harrison-blair"
               icon={Linkedin}
               text="LinkedIn"
-              bgColor="bg-[var(--primary)]"
-              hoverColor="hover:bg-[var(--accent)]"
               isExternal={true}
             />
             <RectangularButton
               href={`mailto:${process.env.NEXT_PUBLIC_RESEND_DESTINATION_EMAIL}`}
               icon={Mail}
               text="Email Me"
-              bgColor="bg-[var(--primary)]"
-              hoverColor="hover:bg-[var(--accent)]"
               isExternal={true}
             />
           </div>
         </div>
-        <form onSubmit={handleSubmit} className='flex flex-col gap-4 text-[var(--primary)] bg-[var(--muted)] p-4 rounded-3xl'>
+        <form onSubmit={handleSubmit} className='card flex flex-col gap-4 text-[var(--primary)]'>
           <input
             type="text"
             name="name"

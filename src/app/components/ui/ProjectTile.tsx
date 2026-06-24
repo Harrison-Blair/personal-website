@@ -3,6 +3,7 @@ import { Github } from "lucide-react";
 
 import { Project } from "../../../data/projects";
 import SmallTag from './Tag';
+import SmartLink from './SmartLink';
 
 export interface ProjectTileProps {
   project: Project;
@@ -28,10 +29,9 @@ export default function ProjectTile({
   const imageStyle = `border border-[0.25rem] border-[var(--primary)] rounded-2xl mb-4 object-cover ${imageStyling}`;
 
   return (
-    <a
+    <SmartLink
       href={project.link}
-      target='_blank'
-      rel="noopener noreferrer"
+      isExternal
       className={`flex flex-col ${height} ${width} bg-[var(--muted)] hover:bg-[var(--accent)] rounded-3xl transition-colors p-4 ${styling}`}
     >
       <div>
@@ -61,6 +61,6 @@ export default function ProjectTile({
           <SmallTag key={index} text={tag} />
         ))}
       </div>
-    </a>
+    </SmartLink>
   );
 }

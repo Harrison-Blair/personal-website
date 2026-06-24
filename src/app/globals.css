@@ -44,6 +44,21 @@ h3 {
   }
 }
 
+@layer components {
+  .card {
+    @apply bg-[var(--muted)] rounded-3xl p-4;
+  }
+
+  .link-accent {
+    @apply underline text-[var(--primary)] hover:text-[var(--accent)];
+  }
+
+  .prose-card {
+    @apply bg-[var(--muted)] rounded-3xl text-center p-4 mb-4
+           lg:bg-inherit lg:text-[var(--secondary)] lg:text-left lg:text-[20px] lg:w-[66%] lg:p-0;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { FileDown, Github, Linkedin, Mail } from "lucide-react";
 import Image from 'next/image';
-import CircularButton from "../components/ui/CircularButton";
+import SocialLinks from "../components/ui/SocialLinks";
+import SmartLink from "../components/ui/SmartLink";
 import ExperienceTile from "../components/ui/ExperienceTile";
 
 import { experiences } from "@/data/experiences";
@@ -39,55 +39,29 @@ export default function Work() {
           <h2 className='text-[var(--foreground)]'>
             Harrison Blair
           </h2>
-          <div className="flex justify-center space-x-4
-                              lg:justify-start">
-            <CircularButton
-              href="https://github.com/Harrison-Blair"
-              icon={Github}
-              bgColor="bg-[var(--primary)]"
-              hoverColor="hover:bg-[var(--accent)]"
-              isExternal={true}
-            />
-            <CircularButton
-              href="https://www.linkedin.com/in/harrison-blair/"
-              icon={Linkedin}
-              bgColor="bg-[var(--primary)]"
-              hoverColor="hover:bg-[var(--accent)]"
-              isExternal={true}
-            />
-            <CircularButton
-              href="/contact"
-              icon={Mail}
-              bgColor="bg-[var(--primary)]"
-              hoverColor="hover:bg-[var(--accent)]"
-            />
-            <CircularButton
-              href="/documents/Harrison-Blair-Web-Resume.pdf"
-              icon={FileDown}
-              bgColor="bg-[var(--primary)]"
-              hoverColor="hover:bg-[var(--accent)]"
-              isDownload={true}
-            />
-          </div>
-          <div className='w-[85%] bg-[var(--muted)] rounded-3xl text-center p-4 m-4
+          <SocialLinks
+            includeResume
+            className="flex justify-center space-x-4
+                              lg:justify-start"
+          />
+          <div className='card w-[85%] text-center m-4
                           lg:text-left'>
             <h2>
               Education
             </h2>
-            <a
+            <SmartLink
               href="https://www.champlain.edu"
-              target="_blank"
-              rel="noopener noreferrer"
+              isExternal
               className="hover:text-[var(--accent)] text-[0.9rem] italic"
             >
               Champlain College - Burlington, VT
-            </a>
+            </SmartLink>
             <p className="text-[1.1rem] mt-2">
               Bachelor&apos;s of Science in Computer Science, <br />
               Minor in Cybersecurity
             </p>
           </div>
-          <div className='w-[85%] bg-[var(--muted)] rounded-3xl text-center p-4 m-4
+          <div className='card w-[85%] text-center m-4
                           lg:text-left'>
             <h2>
               Skills
@@ -101,7 +75,7 @@ export default function Work() {
         </div>
         <div className='text-center
                         lg:text-start'>
-          <p className='bg-[var(--muted)] rounded-3xl p-4 mb-4
+          <p className='card mb-4
                         lg:text-[1.2rem]'>
             I recently graduated from Champlain College with a B.S. in Computer Science and minor in Cybersecurity. Over the past few years I&apos;ve built strong full stack software development skills, using languages like Python, Typescript, C++, and Rust. I am experienced working in agile software development teams, implementing continuous integration/continuous delivery pipelines, modern cloud-based architecture and remote development teams. I love solving complex problems with code, no matter the domain.
           </p>

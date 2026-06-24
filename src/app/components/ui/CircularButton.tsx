@@ -1,12 +1,13 @@
-import Link from 'next/link';
 import { LucideIcon } from 'lucide-react';
+import SmartLink from './SmartLink';
+import { scaleRem } from '../../lib/scaleRem';
 
 interface CircularButtonProps {
   href: string;
   icon: LucideIcon;
-  bgColor: string;
+  bgColor?: string;
   textColor?: string;
-  hoverColor: string;
+  hoverColor?: string;
   size?: string;
   isExternal?: boolean;
   isDownload?: boolean;
@@ -15,35 +16,25 @@ interface CircularButtonProps {
 export default function CircularButton({
   href,
   icon: Icon,
-  bgColor,
+  bgColor = 'bg-[var(--primary)]',
   textColor = 'text-white',
-  hoverColor,
+  hoverColor = 'hover:bg-[var(--accent)]',
   size = '4rem',
   isExternal = false,
   isDownload = false,
 }: CircularButtonProps) {
   const buttonClasses = `flex ${bgColor} ${hoverColor} ${textColor} rounded-full items-center justify-center transition-colors duration-200`;
-  const iconSize = String(parseInt(size) * 0.6) + 'rem';
-
-  if (isExternal) {
-    return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={buttonClasses} style={{ width: size, height: size }}>
-        <Icon size={iconSize} />
-      </a>
-    );
-  }
-
-  if (isDownload) {
-    return (
-      <a href={href} download className={buttonClasses} style={{ width: size, height: size }}>
-        <Icon size={iconSize} />
-      </a>
-    );
-  }
+  const iconSize = scaleRem(size, 0.6);
 
   return (
-    <Link href={href} className={buttonClasses} style={{ width: size, height: size }}>
+    <SmartLink
+      href={href}
+      isExternal={isExternal}
+      isDownload={isDownload}
+      className={buttonClasses}
+      style={{ width: size, height: size }}
+    >
       <Icon size={iconSize} />
-    </Link>
+    </SmartLink>
   );
 }

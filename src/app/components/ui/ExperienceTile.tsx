@@ -1,6 +1,7 @@
 import { Experience } from "@/data/experiences";
 import { Link } from "lucide-react";
 import Tag from "./Tag";
+import SmartLink from "./SmartLink";
 
 export interface ExperienceTileProps {
   experience: Experience;
@@ -12,19 +13,18 @@ export default function ExperienceTile({
   styling = ''
 }: ExperienceTileProps) {
   return (
-    <div className={`bg-[var(--muted)] rounded-3xl p-4 m-4 ${styling}`}>
+    <div className={`card m-4 ${styling}`}>
       <h3>
         {experience.role} {'@ '}
         {experience.link ? (
-          <a
+          <SmartLink
             href={experience.link}
-            target="_blank"
-            rel="noopener noreferrer"
+            isExternal
             className="text-[var(--primary)] hover:text-[var(--accent)] inline-block"
           >
             {experience.company}
             <Link className="inline mb-1 ml-1" size={'1.5rem'} />
-          </a>
+          </SmartLink>
         ) : (
           <span>{experience.company}</span>
         )}
