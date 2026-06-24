@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import CircularButton from "../components/ui/CircularButton";
 import { Github } from "lucide-react";
 import { projects } from "@/data/projects";
 import ProjectTile from "../components/ui/ProjectTile";
+
+export const metadata: Metadata = {
+  title: "Projects | Harrison's Website",
+  description: "A selection of Harrison Blair's open source projects.",
+};
 
 export default function Projects() {
   return (

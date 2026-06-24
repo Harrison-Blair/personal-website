@@ -26,16 +26,22 @@ export default function ImageCarousel({
                 fill={true}
                 className='object-contain'
             />
-            <ChevronLeft
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer hover:text-[var(--accent)] p-2 transition-all duration-200"
-                size={'5rem'}
+            <button
+                type="button"
+                aria-label="Previous image"
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer hover:text-[var(--accent)] transition-all duration-200"
                 onClick={() => setCurrentIndex((currentIndex - 1 + imageUrls.length) % imageUrls.length)}
-            />
-            <ChevronRight
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer hover:text-[var(--accent)] p-2 transition-all duration-200"
-                size={'5rem'}
+            >
+                <ChevronLeft className="p-2" size={'5rem'} />
+            </button>
+            <button
+                type="button"
+                aria-label="Next image"
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer hover:text-[var(--accent)] transition-all duration-200"
                 onClick={() => setCurrentIndex((currentIndex + 1) % imageUrls.length)}
-            />
+            >
+                <ChevronRight className="p-2" size={'5rem'} />
+            </button>
         </div>
     );
 }

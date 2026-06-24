@@ -8,12 +8,12 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   build-and-lint:
     runs-on: ubuntu-latest
-    env:
-      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-      RESEND_DESTINATION_EMAIL: ${{ secrets.RESEND_DESTINATION_EMAIL }}
 
     steps:
       - name: Checkout code

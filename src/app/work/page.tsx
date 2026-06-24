@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { FileDown, Github, Linkedin, Mail } from "lucide-react";
 import Image from 'next/image';
 import CircularButton from "../components/ui/CircularButton";
@@ -5,6 +6,11 @@ import ExperienceTile from "../components/ui/ExperienceTile";
 
 import { experiences } from "@/data/experiences";
 import Tag from "../components/ui/Tag";
+
+export const metadata: Metadata = {
+  title: "Experience | Harrison's Website",
+  description: "Harrison Blair's work experience, education, and skills.",
+};
 
 export default function Work() {
   // Collect unique tags from all experiences
@@ -24,7 +30,7 @@ export default function Work() {
         <div className='flex flex-col items-center'>
           <div className='relative w-2/3 aspect-square mb-2'>
             <Image
-              src="/images/Harrison-Blair.png"
+              src="/images/Harrison-Blair.webp"
               alt="Profile Picture"
               fill
               className="object-cover rounded-full border-[var(--primary)] border-4"

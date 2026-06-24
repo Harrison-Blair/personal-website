@@ -27,6 +27,7 @@ export default function TypewriterText({
   useEffect(() => {
     const currentWord = text[currentWordIndex];
     const speed = isTyping ? typeSpeed : deleteSpeed;
+    let waitTimeout: ReturnType<typeof setTimeout> | undefined;
 
     const timeout = setTimeout(() => {
       setWaiting(false);
@@ -39,7 +40,7 @@ export default function TypewriterText({
       if (isTyping && newText === currentWord) {
         // Finished typing, wait then start deleting
         setWaiting(true);
-        setTimeout(() => setIsTyping(false), delayBetweenWords);
+        waitTimeout = setTimeout(() => setIsTyping(false), delayBetweenWords);
       } else if (!isTyping && newText === '') {
         // Finished deleting, move to next word
         setIsTyping(true);
@@ -47,7 +48,10 @@ export default function TypewriterText({
       }
     }, speed);
 
-    return () => clearTimeout(timeout);
+    return () => {
+      clearTimeout(timeout);
+      clearTimeout(waitTimeout);
+    };
   }, [displayedText, currentWordIndex, isTyping, text, typeSpeed, deleteSpeed, delayBetweenWords]);
 
   return (

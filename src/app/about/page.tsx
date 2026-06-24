@@ -1,11 +1,17 @@
+import type { Metadata } from "next";
 import { Github, Linkedin, Mail } from "lucide-react";
 import CircularButton from "../components/ui/CircularButton";
 import ImageCarousel from "../components/ui/ImageCarousel";
 
+export const metadata: Metadata = {
+  title: "About | Harrison's Website",
+  description: "Learn more about Harrison Blair.",
+};
+
 export default function About() {
   const aboutGalleryImages: string[] = [
-    "/images/about-gallery/Harrison-Birthday.png",
-    "/images/about-gallery/Harrison-Graduation.png",
+    "/images/about-gallery/Harrison-Birthday.webp",
+    "/images/about-gallery/Harrison-Graduation.webp",
     // Add more image URLs as needed
   ];
 
