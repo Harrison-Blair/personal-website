@@ -17,7 +17,7 @@ export default function Navigation() {
     ];
 
     return (
-        <nav className="fixed left-0 bottom-0 w-full h-[var(--nav-size)] bg-[var(--muted)] py-4 transition-all duration-300 ease-in-out
+        <nav className="fixed left-0 bottom-0 z-10 w-full h-[var(--nav-size)] bg-[var(--muted)] py-4 transition-all duration-300 ease-in-out
                         lg:top-0 lg:h-full lg:w-[var(--nav-size)]">
                 <ul className='flex flex-row justify-around items-center
                                 lg:flex-col lg:gap-6'>

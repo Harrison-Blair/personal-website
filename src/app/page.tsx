@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import TypewriterText from './components/ui/TypewriterText';
 import SocialLinks from './components/ui/SocialLinks';
+import PenguinParade from './components/ui/PenguinParade';
 
 export default function Home() {
   const roles = [
@@ -40,6 +41,7 @@ export default function Home() {
       </p>
       <SocialLinks className="flex justify-center space-x-4
                     lg:justify-start" />
+      <PenguinParade />
     </div>
   );
 }
